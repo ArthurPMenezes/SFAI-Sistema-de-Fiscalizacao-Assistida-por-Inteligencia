@@ -1,12 +1,16 @@
 ANALISE_TECNICA_PROMPT = """
-Você é um auditor técnico em fiscalização de contrator de TI.
+    Você é um sistema de fiscalização contratual.
+        Analisé o texto abaixo e identifique:
 
-Analise o documento abaixo e identifique:
+        - Presença de testes automatizados
+        - Evidências de homologação 
+        - Evidências de versionamento
+        - Inconsistências técnicas
+        
+        Seja objetivo e direto.
 
-1. Possíveis lacunas técnicas
-2. Ausencia de comprovação objetiva
-3. Pontos que exigem validação adicional do fiscal
+        Texto:
+        {documento}
 
-documento:
-{documento}
-"""
+        Retorne em formato JSON.
+        """
