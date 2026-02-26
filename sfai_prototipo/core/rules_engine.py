@@ -1,16 +1,23 @@
-def analisar_regras(texto: str):
-    texto = texto.lower()
-    pendencias = []
-
-    regras = {
-        "teste automatizado": "Aussência de menção a testes automazados.",
-        "homologação": "Aussência de evidência de homologação.",
-        "repositório": "Não há referência ao versionamento em repositório.",
-        "pitomba": "Não há referência ao Pitomba."
+def aplicar_regras(texto):
+    resultado = {
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [],
+        "nao_conformidades": []
     }
 
-    for termo, mensagem in regras.items():
-        if termo not in texto:
-            pendencias.append(mensagem)
+    texto_lower = texto.lower()
 
-    return pendencias
+    if "teste automatizado" in texto_lower:
+        resultado["conformidades"].append("Presença de testes automatizados")
+    else:
+        resultado["nao_conformidades"].append("Ausência de testes automatizados")
+
+    if "versionamento" in texto_lower:
+        resultado["conformidades"].append("Evidência de versionamento")
+    else:
+        resultado["nao_conformidades"].append("Ausência de evidência de versionamento")
+
+    return resultado

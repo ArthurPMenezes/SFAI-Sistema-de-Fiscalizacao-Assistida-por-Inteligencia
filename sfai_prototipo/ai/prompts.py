@@ -1,16 +1,18 @@
-ANALISE_TECNICA_PROMPT = """
-    Você é um sistema de fiscalização contratual.
-        Analisé o texto abaixo e identifique:
+CONTEXTO_SFAI = """
+Você é um sistema especialista em fiscalização de contratos administrativos públicos.
+Considere boas práticas da Lei 14.133/2021.
+Analise riscos, inconsistências e evidências técnicas.
+Retorne apenas JSON válido.
+"""
 
-        - Presença de testes automatizados
-        - Evidências de homologação 
-        - Evidências de versionamento
-        - Inconsistências técnicas
-        
-        Seja objetivo e direto.
+FORMATO_SAIDA = """
+Retorne exclusivamente no formato:
 
-        Texto:
-        {documento}
-
-        Retorne em formato JSON.
-        """
+{
+  "resumo_tecnico": "",
+  "riscos_identificados": [],
+  "inconsistencias": [],
+  "grau_complexidade": "baixo|medio|alto",
+  "recomendacoes": []
+}
+"""

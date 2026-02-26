@@ -1,0 +1,18 @@
+{
+    "analise_id": "fbc64be2-aa4f-43b9-b733-40d642ad22ad",
+    "timestamp": "2026-02-26T19:11:14.839369+00:00",
+    "regras_aplicadas": [
+        "verificacao_testes",
+        "verificacao_versionamento"
+    ],
+    "conformidades": [
+        "Evidência de versionamento"
+    ],
+    "nao_conformidades": [
+        "Ausência de testes automatizados"
+    ],
+    "score_final": 50,
+    "nivel_risco": "moderado",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": false
+}
