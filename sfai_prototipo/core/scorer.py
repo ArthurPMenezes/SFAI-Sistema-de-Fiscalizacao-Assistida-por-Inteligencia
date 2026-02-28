@@ -5,7 +5,11 @@ def calcular_score(resultado_regras):
     if total == 0:
         return 0, "indefinido"
 
-    score = int((len(resultado_regras["conformidades"]) / total) * 100)
+    score = int((total_conformes / total) * 100)
+
+    # Penalização se documento for fraco
+    if "Documento muito curto para evidência formal" in resultado_regras["nao_conformidades"]:
+        score = min(score, 50)
 
     if score >= 80:
         nivel = "baixo"

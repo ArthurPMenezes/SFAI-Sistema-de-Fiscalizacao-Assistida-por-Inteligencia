@@ -1,0 +1,743 @@
+{
+    "analise_id": "aed2bc3c-a6e8-45f5-8a7c-83f266b626f5",
+    "timestamp": "2026-02-28T20:25:53.822914+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": true,
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": {
+            "tipo_contrato": "UST",
+            "objeto": "Contratação de empresa para prestação de serviços de análise, desenvolvimento, manutenção, documentação, suporte e teste de software, na forma de serviços continuados presenciais e não presenciais, contemplando a transferência de conhecimento e agregação tecnológica, respeitando os padrões de desenvolvimento, desempenho e qualidade estabelecidos pelo Tribunal de Justiça do Estado do Amazonas - TJAM.",
+            "entregaveis": [
+                {
+                    "descricao": "[Protótipo] Elaboração de protótipo ou wireframe",
+                    "criterios_aceite": [
+                        "Entrega de protótipo de tela em arquivo no formato PDF (ou outros formatos requeridos).",
+                        "Protótipo deve exibir organização das informações, componentes visuais, cores, tipografia e imagens para a tela do sistema.",
+                        "Para complexidade Alta: tela com 10 a 15 itens de interação.",
+                        "Para complexidade Altíssima: tela com mais de 15 itens de interação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Imagem] Elaboração de ícone ou imagem vetorial",
+                    "criterios_aceite": [
+                        "Entrega de ícone ou imagem vetorial nos formatos PNG, JPG e SVG.",
+                        "Conformidade com as especificações de formato e tamanho.",
+                        "Produção a partir de fontes preexistentes livres de direitos autorais, de uso formalmente autorizado, ou por design criativo.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Backlog] Organização e priorização do backlog geral do produto e das tarefas do sprint",
+                    "criterios_aceite": [
+                        "Organização e priorização do backlog geral do produto.",
+                        "Organização, priorização e aprovação com o negócio das tarefas do sprint.",
+                        "Atividade recorrente a cada ciclo iterativo (sprint).",
+                        "Para complexidade Altíssima: backlog contendo três ou mais atividades de user-story com mais de 10 critérios de aceitação cada.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Recorrente a cada ciclo iterativo (sprint). Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Modelo] Modelo de dados",
+                    "criterios_aceite": [
+                        "Entrega de arquivo em PDF e PNG contendo diagrama de Classes em padrão UML ou diagrama de Entidade Relacionamento (DER).",
+                        "Diagrama deve descrever as entidades do sistema e seus relacionamentos.",
+                        "Unidade de medida: por número de classes de objeto.",
+                        "Para complexidade Altíssima: modelos com mais de 10 objetos.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[sprint-review-restrospective] Sprint review-retrospective",
+                    "criterios_aceite": [
+                        "Entrega de descrição da reunião de revisão, incluindo participantes, assunto da review e resumo das lições aprendidas.",
+                        "Realização da reunião de revisão (Sprint Review) e retrospectiva, única por participante da contratada na sprint.",
+                        "O produto é inspecionado e o time verifica lições aprendidas para melhoria do processo.",
+                        "Para Altíssima complexidade: caso a sprint não atinja os objetivos acordados ou falha nas cerimônias (ANEXO IV, Indicador 2).",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Única por participante da contratada na sprint. Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[user-story] Especificação de funcionalidade por meio de História do Usuário (user story)",
+                    "criterios_aceite": [
+                        "Entrega de documento História de Usuário registrada no Redmine.",
+                        "Descrição textual de funcionalidade no formato de história do usuário.",
+                        "Unidade de medida: por critério de aceitação (2 UST por critério).",
+                        "Para complexidade Altíssima: user-story contendo mais de 20 critérios de aceitação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[plano-trabalho] Elaborar plano de trabalho",
+                    "criterios_aceite": [
+                        "Entrega de Plano de trabalho.",
+                        "Elaboração do plano para atividades demandadas (2 USTs para cada 80 USTs planejadas).",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[arquitetura] Elaboração do Desenho/Arquitetura da solução",
+                    "criterios_aceite": [
+                        "Entrega de diagrama contendo a arquitetura da solução apresentada em formato PDF ou PNG (ou outros formatos requeridos).",
+                        "Diagrama deve incluir componentes de software, servidores, serviços, interfaces, protocolos, fluxo de atividades e interação entre componentes.",
+                        "Para complexidade Altíssima: sistemas envolvendo complexidade arquitetural alta, como integração com sistemas distribuídos.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[avaliacao-squad] Elaboração de documento de avaliação de squad",
+                    "criterios_aceite": [
+                        "Entrega de Documento de avaliação de squads.",
+                        "Acompanhamento e avaliação das squads, preenchendo itens de agilidade conforme critérios da contratada.",
+                        "Requer autorização prévia.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[backend] Criação de funcionalidade no backend do sistema",
+                    "criterios_aceite": [
+                        "Entrega de Código da implementação incorporado ao sistema e adicionado ao repositório (sistema de controle de versão).",
+                        "Criação completa da funcionalidade no lado servidor.",
+                        "Unidade de medida: por quantidade de operações CRUD.",
+                        "Para complexidade Altíssima: atividades com 4 unidades elementares CRUD.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[backend-alteracao] Alteração ou reuso de funcionalidade no backend do sistema",
+                    "criterios_aceite": [
+                        "Entrega de Código da implementação incorporado ao sistema e adicionado ao repositório (sistema de controle de versão).",
+                        "Alteração de funcionalidade no lado servidor ou reuso de funcionalidade/serviço similar.",
+                        "Unidade de medida: por quantidade de operações CRUD (unidade elementar CRUD associada).",
+                        "Para complexidade Altíssima: atividades com 4 unidades elementares CRUD.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[[teste-unitario] Criação de teste automatizado de back-end",
+                    "criterios_aceite": [
+                        "Entrega de Código da implementação do teste incorporado ao sistema e adicionado ao repositório (sistema de controle de versão).",
+                        "Criação completa de teste de unidade cobrindo funcionalidade de back-end.",
+                        "Unidade de medida: por quantidade de funcionalidade de back-end coberta.",
+                        "Para complexidade Altíssima: teste cobrindo back-end com 4 unidades elementares CRUD.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[teste-unitario-alteracao] Alteração de teste de bac-kend",
+                    "criterios_aceite": [
+                        "Entrega de Código da implementação do teste incorporado ao sistema e adicionado ao repositório (sistema de controle de versão).",
+                        "Alteração do teste de unidade cobrindo funcionalidade de back-end.",
+                        "Unidade de medida: por quantidade de funcionalidade de back-end coberta.",
+                        "Para complexidade Altíssima: teste cobrindo back-end com 4 unidades elementares CRUD.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[relatorio] Elaboração de relatório em arquivo",
+                    "criterios_aceite": [
+                        "Entrega de Código da implementação incorporado ao sistema e adicionado ao repositório (sistema de controle de versão).",
+                        "Criação da estrutura de relatório em arquivo (pdf, xls ou similar), com estilos e organização conforme protótipo pré-definido.",
+                        "Codificação para geração do arquivo em tecnologias como jasper, spreadsheet, stylesheets, pdfkit ou prawn.",
+                        "Para complexidade Alta: relatórios contendo de 10 a 15 campos de informação.",
+                        "Para complexidade Altíssima: relatórios com mais de 15 campos de informação.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[relatorio-alteracao] Alteração de relatório em arquivo",
+                    "criterios_aceite": [
+                        "Entrega de Código da implementação incorporado ao sistema e adicionado ao repositório (sistema de controle de versão).",
+                        "Alteração da estrutura de relatório em arquivo (pdf, xls ou similar), com estilos e organização conforme protótipo pré-definido.",
+                        "Codificação para geração do arquivo em tecnologias como jasper, spreadsheet, stylesheets, pdfkit ou prawn.",
+                        "Para complexidade Alta: relatórios contendo de 10 a 15 campos de informação.",
+                        "Para complexidade Altíssima: relatórios com mais de 15 campos de informação.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[frontend] Criação de funcionalidade de usabilidade no front end",
+                    "criterios_aceite": [
+                        "Entrega de Código da implementação incorporado ao sistema e adicionado ao repositório (sistema de controle de versão).",
+                        "Criação completa da funcionalidade no lado cliente.",
+                        "Unidade de medida: por funcionalidade.",
+                        "Para complexidade Altíssima: funcionalidades com necessidade de negócio complexa.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[frontend-alteracao] Alteração ou reuso de funcionalidade de usabilidade no front end e adição de funcionalidade simples",
+                    "criterios_aceite": [
+                        "Entrega de Código da implementação incorporado ao sistema e adicionado ao repositório (sistema de controle de versão).",
+                        "Alteração de funcionalidade no lado cliente, reutilização de funcionalidade similar, ou criação de elemento simples de filtro de listagem, ordenação e validação simples de campos de formulário.",
+                        "Unidade de medida: por funcionalidade.",
+                        "Para complexidade Altíssima: funcionalidades com necessidade de negócio complexa.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[problema] Verificação e registro de problema",
+                    "criterios_aceite": [
+                        "Entrega de Descrição textual sobre análise realizada, podendo incluir testes, procedimentos e conclusão.",
+                        "Verificação de problema em sistema por parte do desenvolvimento.",
+                        "Tarefa pode ser aberta em caso de problema, mas se for garantia, não terá custo.",
+                        "Pode incluir realização de testes e procedimentos.",
+                        "Para complexidade Altíssima: atendimento fora do horário de trabalho padrão.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[deploy] Deploy de sistema",
+                    "criterios_aceite": [
+                        "Entrega de Registro do deploy em ferramenta automatizada ou registro de atividades realizadas por ferramenta de registro de operações.",
+                        "Geração de nova versão de sistema.",
+                        "Pode exigir seguir o plano de comunicação do processo de Deploy.",
+                        "Unidade de medida: por ambiente.",
+                        "Para complexidade Altíssima: atendimento emergencial fora da janela de deploy.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[configuracao-sistema] Configuração de sistema",
+                    "criterios_aceite": [
+                        "Entrega de Descrição e registro da atividade.",
+                        "Trabalho completo de configuração, scripts e todo o trabalho para que a aplicação esteja funcional no ambiente (homologação, produção ou outro).",
+                        "Unidade de medida: por quantidade de ambientes.",
+                        "Para complexidade Altíssima: configuração de sistemas legados.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Componente] Configuração ou execução de componente (Biblioteca/Rotina/Extensão)",
+                    "criterios_aceite": [
+                        "Entrega de Descrição e registro da atividade e código adicionado ao repositório quando aplicável.",
+                        "Instalação, execução, atualização ou configuração para que o componente (software, biblioteca, rotina ou extensão) funcione adequadamente acoplado ao sistema, ambiente ou serviço.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Script] Elaboração e execução de scripts",
+                    "criterios_aceite": [
+                        "Entrega de Script SQL (e Arquivo no formato CSV quando solicitado).",
+                        "Elaboração de script para realizar operações de CRUD diretamente no banco de dados.",
+                        "Unidade de medida: 1 UST por cada 4 tabelas.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Teste] Teste funcional",
+                    "criterios_aceite": [
+                        "Entrega de Registro dos resultados dos testes na tarefa associada do Redmine.",
+                        "Realização de testes funcionais em ambiente de homologação, demonstrando resultados satisfatórios de acordo com a(s) história(s) de usuário.",
+                        "Unidade de medida: por critério de aceitação, ou por funcionalidade.",
+                        "Serviço disponibilizado no ambiente de homologação e código da versão final (deploy) no ambiente institucional de controle de versão.",
+                        "Formalização (e-mail ou outro meio aprovado) de: número de versão do deploy, caminho completo da versão no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Registro-tarefa] Registro de ocorrências e tarefas (Itop e Redmine)",
+                    "criterios_aceite": [
+                        "Entrega de Relatório de registros.",
+                        "Registro de ocorrências ou solicitações em sistema de demandas (Itop e Redmine).",
+                        "Unidade de medida: por registro.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Suporte] Suporte",
+                    "criterios_aceite": [
+                        "Entrega de Registro de demanda e registro de eventuais interações com as áreas relacionadas ou usuário demandante.",
+                        "Identificação da solicitação do usuário, providenciando a solução ou encaminhamento para outra área.",
+                        "Orientação e configuração de permissões de acesso aos sistemas.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Manual-usuário] Elaboração de manual de usuário",
+                    "criterios_aceite": [
+                        "Entrega de Documentação de usuário em arquivo no formato PDF (ou outros formatos requeridos, incluindo conteúdo para ajuda online).",
+                        "Manual de usuário elaborado de acordo com o padrão institucional de documentação.",
+                        "Unidade de medida: Por História de Usuário ou Funcionalidade.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Documento] Elaboração de documentação auxiliar",
+                    "criterios_aceite": [
+                        "Entrega de Documentação produzida em formato PDF e descrição de justificativa do motivo do documento e do tempo gasto na elaboração.",
+                        "Elaboração de documentos diversos em apoio ao processo de desenvolvimento de sistemas.",
+                        "Tarefa para situação de caráter excepcional e exige autorização prévia.",
+                        "Unidade de medida: por quantidade de horas de elaboração.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Parecer-técnico] Análise e elaboração de Parecer técnico de sistemas",
+                    "criterios_aceite": [
+                        "Entrega de Documento de parecer técnico e outros artefatos/anexos caso necessário.",
+                        "Parecer técnico sobre sistema relacionado a alguma área ou disciplina da engenharia de software (arquitetura, segurança, análise de código ou documentação).",
+                        "Tarefa para situação de caráter excepcional e exige autorização prévia.",
+                        "Unidade de medida: por hora de análise e elaboração.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Configuracao] Configuração de sistema e/ou perfil",
+                    "criterios_aceite": [
+                        "Entrega de Relatório de atividades.",
+                        "Configuração de sistema como habilitação de permissões ou liberação de acessos concluída.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Treinamento - presencial] Realizar treinamento técnico presencial",
+                    "criterios_aceite": [
+                        "Entrega de Documento constando o plano de aula, carga horária e lista de participantes.",
+                        "Realização de treinamento presencial conforme plano de aula e carga horária.",
+                        "Unidade de medida: por hora/aula.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                },
+                {
+                    "descricao": "[Reunião] Participação em reuniões",
+                    "criterios_aceite": [
+                        "Entrega de Registro do esclarecimento, ata de reunião ou lista de presença.",
+                        "Participação em reuniões para levantamento de requisitos, esclarecimento sobre sistemas, alinhamento com áreas ou outros assuntos relacionados ao desenvolvimento e sustentação de sistemas.",
+                        "Unidade de medida: por hora de reunião.",
+                        "Aceite provisório em até 10 dias corridos para verificação de conformidade.",
+                        "Aceite definitivo em 10 dias úteis do recebimento provisório.",
+                        "Conformidade com especificações do Termo de Referência, check list de requisitos e modelo de avaliação de interface do TJAM."
+                    ],
+                    "prazo_associado": "Conforme Ordem de Serviço. Aceite provisório em até 10 dias corridos; Aceite definitivo em 10 dias úteis do provisório."
+                }
+            ],
+            "prazos_gerais": [
+                "Vigência do contrato: 12 (doze) meses, contados a partir da data de assinatura, podendo ser prorrogado nos termos do Art. 57, II, da Lei nº 8.666/93.",
+                "Cronograma de execução dos serviços por demanda, formalizado posteriormente para cada atividade (Ordem de Serviço).",
+                "Prazo para formação da equipe após abertura da OS: até 30 (trinta) dias corridos.",
+                "Prazo para substituição de profissional da equipe técnica: 30 (trinta) dias corridos após notificação do TJAM.",
+                "Prazo para recebimento provisório dos serviços: até 10 (dez) dias corridos para avaliação dos entregáveis.",
+                "Prazo para recebimento definitivo dos serviços: 10 (dez) dias úteis, contados do recebimento provisório.",
+                "Prazo para a Contratada providenciar substituição de equipamento e/ou ajustes nos serviços em caso de não aceite: 15 (quinze) dias úteis.",
+                "Prazo para a Contratada apresentar relatório de fechamento mensal: em no máximo 5 (cinco) dias úteis a contar do encerramento do período de aferição.",
+                "Prazo para o TJAM analisar e aprovar o relatório de fechamento mensal: até 15 (quinze) dias úteis, contados do recebimento.",
+                "Prazo para o TJAM reanalisar novo relatório de fechamento (em caso de divergência): 5 (cinco) dias úteis a cada reapresentação.",
+                "Prazo para pagamento da Nota Fiscal Eletrônica/Fatura: até 30 (trinta) dias após aceitação pelo TJAM."
+            ],
+            "valor_global": null,
+            "obrigações_relevantes": [
+                "Contratante deve comunicar à Contratada qualquer ocorrência relacionada à execução dos serviços e/ou fornecimentos.",
+                "Contratante deve proporcionar as facilidades necessárias ao bom desempenho do objeto contratado.",
+                "Contratante deve fiscalizar a execução dos serviços e fornecimentos, podendo sustar, recusar, mandar fazer ou desfazer qualquer serviço que não esteja de acordo com as condições e exigências.",
+                "Contratante deve designar servidor para acompanhar e fiscalizar a execução do Contrato.",
+                "Contratante deve rejeitar, no todo ou em parte, serviço ou fornecimento executado em desacordo com o contrato.",
+                "Contratante deve efetuar o pagamento à Contratada, de acordo com as condições de preço e prazo estabelecidas.",
+                "Contratante deve receber o objeto no horário de funcionamento das unidades responsáveis.",
+                "Contratante deve solicitar a substituição do objeto do contrato em que se verificarem vícios, defeitos ou incorreções (quando aplicável).",
+                "Contratada deve manter durante toda a execução do contrato compatibilidade com as obrigações assumidas.",
+                "Contratada deve reparar, corrigir, ou substituir, às suas expensas, o objeto do contrato em que se verificarem vícios, defeitos ou incorreções.",
+                "Contratada deve responder pelos danos causados à Contratante ou a terceiros, decorrentes de sua culpa ou dolo na execução do contrato.",
+                "Contratada deve responder, em relação aos seus empregados, por todas as despesas decorrentes da execução dos serviços (salários, seguros, taxas, impostos, contribuições, indenizações).",
+                "Contratada deve respeitar as normas de controle de bens e de fluxo de pessoas nas dependências da Contratante.",
+                "Contratada deve manter preposto durante o período de vigência deste contrato para representá-la.",
+                "Contratada não deve realizar veiculação de publicidade acerca deste contrato, salvo prévia autorização da Contratante.",
+                "Contratada não deve realizar a subcontratação dos serviços.",
+                "Contratada não deve se eximir do cumprimento integral do contrato, conforme definido no Edital e na Lei.",
+                "Contratada deve providenciar a integração em tempo real entre seu sistema de gestão de demandas (SGD) e o sistema de controle da Contratante, com tecnologia e protocolos escolhidos pelo TJAM.",
+                "Contratada deve fornecer informações atualizadas a respeito da situação de cada Ordem de Serviço, sempre que solicitada.",
+                "Contratada deve apresentar, para assinatura do contrato, garantia equivalente a 5% do valor total do contrato, conforme § 1º, do art. 56, da Lei 8.666/93.",
+                "Contratada deve reforçar a garantia oferecida em caso de prorrogação da vigência contratual e/ou de acréscimo de serviços.",
+                "Contratada deve realizar verificação da qualidade dos produtos gerados antes de sua entrega.",
+                "Contratada deve apresentar mensalmente, em no máximo cinco dias úteis, relatório de fechamento ao gestor do contrato, relacionando O.S. ou parcelas remuneráveis concluídas no período, com níveis de serviço e valores calculados.",
+                "Contratada deve emitir nota fiscal/fatura somente após aprovação do relatório de fechamento mensal e contendo apenas os serviços efetivamente concluídos.",
+                "Contratada deve garantir a proteção e o sigilo do código de identificação de acesso gerado pelo TJAM, respondendo por todas as transações efetuadas sob esse código.",
+                "Contratada não deve tentar acessar arquivos ou ambientes para os quais não esteja autorizado ou que não possuam relação direta com os serviços contratados.",
+                "Contratada deve cumprir as condutas adequadas contra destruição, modificação, divulgação indevida e acessos não autorizados de informações restritas do TJAM.",
+                "Contratada não deve utilizar equipamentos, informações e sistemas informatizados do TJAM para atividades com fins comerciais ou uso extensivo para assuntos pessoais ou privados.",
+                "Contratada se compromete a utilizar apenas produtos de software com as licenças de uso válidas.",
+                "Contratada deve respeitar os direitos de propriedade intelectual, em particular a lei de direitos autorais de software.",
+                "Contratada declara conhecer e se compromete a seguir e divulgar entre seus colaboradores a Política de Segurança da Informação do TJAM e normativos correlatos.",
+                "Contratada obriga-se a informar imediatamente ao TJAM qualquer violação das regras de sigilo estabelecidas.",
+                "Contratada deve formar a equipe solicitada em até 30 (trinta) dias corridos após abertura da OS.",
+                "Contratada deve substituir profissional que não demonstre desempenho, habilidade ou competência requeridos no prazo de 30 (trinta) dias corridos, após notificação do TJAM.",
+                "Contratada é responsável por todas as atividades de apoio, acompanhamento, suporte e atendimento às ocorrências de erro durante o processo de homologação dos serviços.",
+                "Contratada deve demonstrar a execução do serviço disponibilizando-o no ambiente de homologação e o código da versão final (deploy) no ambiente institucional de controle de versão.",
+                "Contratada deve formalizar, por e-mail ou outro meio aprovado, informações sobre o deploy (versão, caminho no repositório, descrição dos serviços, atesto de realização, testes mínimos funcionais, e garantia de pronto para uso em homologação)."
+            ],
+            "riscos_contratuais_identificados": [
+                "Subjetividade na qualificação do fator de complexidade e ajuste de UST, podendo gerar divergências no cálculo da remuneração, apesar da existência de uma tabela de fatores.",
+                "Atraso na execução das demandas pode resultar em multa de 0,2% do valor da solicitação por hora de atraso (Indicador 1 - IOSEP).",
+                "Não cumprimento dos objetivos da sprint (sprint insatisfatória) pode gerar glosa de 10% no valor da entrega por ordem de serviço (Indicador 2 - ISS).",
+                "Não atendimento às especificações do Termo de Referência ou proposta pode levar à rejeição total ou parcial do produto/serviço, com suspensão dos prazos de pagamento e necessidade de correção/substituição.",
+                "Divergências nos valores apresentados nos relatórios de fechamento mensais podem suspender o processo de análise e pagamento até que as correções sejam feitas.",
+                "Falha da Contratada em substituir profissional que não demonstre desempenho, habilidade ou competência em 30 dias corridos pode impactar a execução e qualidade dos serviços.",
+                "Quebra de sigilo de informações restritas do TJAM pode resultar na rescisão imediata do contrato, pagamento de perdas e danos (inclusive morais), e responsabilização civil e criminal.",
+                "Subcontratação de serviços é vedada e pode acarretar penalidades.",
+                "Não reforço da garantia contratual em caso de prorrogação ou acréscimo de serviços pode levar à aplicação de penalidades administrativas e rescisão unilateral.",
+                "Inadequação da equipe ou falta de capacidade e/ou eficiência dos profissionais alocados não será compensada pelo fator de ajuste de complexidade (24.7)."
+            ]
+        }
+    },
+    "evidencia": {
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento",
+            "verificacao_estrutura_tecnica",
+            "verificacao_tamanho_documento"
+        ],
+        "conformidades": [
+            "Documento com volume compatível"
+        ],
+        "nao_conformidades": [
+            "Ausência de evidência real de testes",
+            "Nenhum hash de commit identificado",
+            "Documento fraco em indicadores técnicos"
+        ],
+        "score_deterministico": 25,
+        "nivel_risco": "alto",
+        "analise_ia": {
+            "atividades_executadas": [
+                "Auditoria de avaliação do processo de trabalho na gestão de contratações de Tecnologia da Informação e Comunicações (TIC)",
+                "Reunião preliminar com a Secretaria de Tecnologia da Informação e Comunicações (SETIC)",
+                "Verificação de riscos e controles associados à gestão e fiscalização de contratos de TIC",
+                "Definição do escopo do trabalho e do Programa de Auditoria",
+                "Elaboração da Matriz de Auditoria",
+                "Elaboração da Requisição de Documentos e Informações (RDI)",
+                "Realização da reunião de abertura da auditoria",
+                "Envio das questões de auditoria por meio da RDI",
+                "Análise das respostas das questões de auditoria, atos normativos, processos administrativos e documentos e sistemas indicados pela unidade auditada",
+                "Elaboração do Quadro de Resultados de auditoria",
+                "Envio do Quadro de Resultados para a unidade auditada",
+                "Manifestação da unidade auditada sobre o Quadro de Resultados",
+                "Realização de reuniões com a área auditada para discutir achados e pontos de melhoria",
+                "Manifestação da Diretoria-Geral sobre achados de auditoria",
+                "Elaboração do Relatório Final de Auditoria",
+                "Comunicação dos resultados da auditoria",
+                "Exame documental",
+                "Consulta a sistemas (Proad e Gecon)",
+                "Entrevistas",
+                "Seleção de amostra sistemática de processos administrativos (Proads)",
+                "Preenchimento do Quadro de Resultados",
+                "Solicitação de informações adicionais",
+                "Desenvolvimento de funcionalidade de histórico de ocorrências no sistema Gecon pela SETIC (em resposta a achado)",
+                "Notificação de descumprimento contratual pela SETIC (em resposta a achado no Proad 4858/2019)",
+                "Verificação e ateste das regularidades fiscais, trabalhistas e previdenciárias pelo Fiscal Administrativo do Contrato (recomendado)",
+                "Inserção de cronograma, tarefas significativas e prazos nas Ordens de Serviços (recomendado)",
+                "Realização e documentação de reunião inicial nos contratos de prestação de serviços (recomendado)",
+                "Indicação do nome do Gestor de Contrato na portaria de fiscalização (recomendado)",
+                "Designação do Fiscal Demandante do Contrato quando a unidade demandante não for a SETIC (recomendado)",
+                "Designação dos suplentes de todos os membros da equipe de fiscalização (recomendado)",
+                "Avaliação da conveniência e oportunidade de ajustar normativos internos às normas superiores (recomendado)",
+                "Atualização contínua da Análise de Riscos (recomendado)",
+                "Reanálise do planejamento da contratação de UST para avaliação da economicidade (recomendado)",
+                "Definição de critérios para avaliação e classificação das contratações e distribuição equitativa entre fiscais (recomendado)",
+                "Exame da conveniência e oportunidade de realocar servidores administrativos para a SETIC (recomendado)",
+                "Comunicação formal prévia da indicação das atribuições dos integrantes da equipe de fiscalização (recomendado)"
+            ],
+            "entregaveis_mencionados": [
+                "Termo de Compromisso (declaração de sigilo e segurança)",
+                "Termo de Ciência (declaração de sigilo e segurança)",
+                "Serviços de Manutenção e assistência técnica preventiva e corretiva da Central Alcatel OmniPCX Enterprise",
+                "Serviços técnicos especializados na área de tecnologia da informação (suporte técnico remoto e presencial a usuários - Service Desk)",
+                "Serviço de manutenção, remanejamento, reparo e instalação de pontos lógicos da rede corporativa do TRT5",
+                "Bens (genérico, em Ordens de Serviço)",
+                "Serviços (genérico, em Ordens de Serviço)",
+                "Aquisição de computadores",
+                "Resultados ou produtos aferíveis (em contratos de UST)",
+                "Entregáveis específicos e níveis de serviço (em contratos de UST)"
+            ],
+            "datas_identificadas": [
+                "Julho/2021",
+                "24/3/2021",
+                "5/4/2021",
+                "6/4/2021",
+                "23/4/2021",
+                "26/4/2021",
+                "30/4/2021",
+                "29/04/2021",
+                "10/5/2021",
+                "24/5/2021",
+                "25/5/2021",
+                "3/6/2021",
+                "10/6/2021",
+                "11/06/2021",
+                "17/06/2021",
+                "18/6/2021",
+                "21/6/2021",
+                "22/6/2021",
+                "8/7/2021",
+                "9/7/2021",
+                "Janeiro/2011",
+                "Outubro/2013",
+                "30/07/2019",
+                "02/08/2019",
+                "21/08/2020",
+                "30/8/2019",
+                "29/9/2019",
+                "2020",
+                "40 dias (prazo para plano de ação)",
+                "365 dias (prazo total para cumprimento de recomendações)",
+                "Triênio 2021/2024"
+            ],
+            "artefatos_tecnicos_mencionados": [
+                "PROAD (Sistema e processos administrativos)",
+                "Sistema Gecon",
+                "Relatório de Auditoria",
+                "Programa de Auditoria",
+                "Matriz de Auditoria",
+                "Requisição de Documentos e Informações (RDI)",
+                "Quadro de Resultados de auditoria",
+                "Termo de Compromisso (de manutenção de sigilo e normas de segurança)",
+                "Termo de Ciência (de manutenção de sigilo e normas de segurança)",
+                "Termo de Referência (TR)",
+                "Edital de licitação",
+                "Atas de reuniões iniciais",
+                "Portaria de publicação da equipe de fiscalização",
+                "Estudo Técnico Preliminar (ETP)",
+                "Mapa de Gerenciamento de Riscos",
+                "Catálogo “Repertório de Estimativas”",
+                "Ordens de Serviços (OS)",
+                "Notas fiscais",
+                "Mensagem eletrônica",
+                "Chat (ferramenta Google)",
+                "Sistema de Cadastramento Unificado de Fornecedores (SICAF)",
+                "Despacho",
+                "PDTIC"
+            ],
+            "indicadores_qualidade": [
+                "Qualidade na execução da fiscalização",
+                "Prestações de serviços alinhadas às expectativas do Tribunal",
+                "Utilização eficiente de recursos públicos",
+                "Aperfeiçoamento dos controles internos",
+                "Aprimoramento da maturidade, gestão de riscos e qualidade na gestão de contratações",
+                "Transparência na atuação dos atores envolvidos",
+                "Organização dos fatos, condições e avaliações (histórico de gerenciamento)",
+                "Otimização da busca de informações úteis",
+                "Clareza e segurança na prestação contratual",
+                "Conformidade e qualidade das entregas (validadas pelo fiscal Demandante/Técnico)",
+                "Economicidade (na contratação)",
+                "Distribuição equitativa de contratos entre fiscais",
+                "Redução de atrasos e sobrecarga de responsabilidades",
+                "Melhoria na produtividade e motivação dos servidores",
+                "Melhoria na rastreabilidade e mensuração de serviços",
+                "Pagamento de acordo com os serviços efetivamente realizados",
+                "Definição clara do escopo e das entregas dos bens e serviços dentro dos prazos contratuais",
+                "Vinculação das ordens de serviço às especificações dos Termos de Referências",
+                "Melhoria no alinhamento de detalhes sobre o objeto e a execução contratual",
+                "Garantia da continuidade da fiscalização nos impedimentos/ausências do fiscal titular"
+            ],
+            "menção_aceite_formal": true,
+            "indicios_risco": [
+                "TRT5 ainda não possui uma política de gestão de riscos totalmente implantada",
+                "Unidades administrativas, em regra, ainda não têm seus riscos identificados e tratados com metodologia adequada",
+                "Deficiência na Segurança da Informação no que tange à declaração de manutenção de sigilo e respeito às normas de segurança vigentes (Termo de Compromisso/Ciência)",
+                "Falha no histórico das ocorrências contratuais (ausência de registros formais por ordem cronológica)",
+                "Deficiência na verificação das regularidades fiscais, trabalhistas e previdenciárias pela equipe de fiscalização",
+                "Risco de responsabilização da Administração Pública por passivos fiscais, trabalhistas ou previdenciários de contratadas",
+                "Deficiência nos elementos mínimos das Ordens de Serviços (ausência de cronograma, tarefas significativas e prazos)",
+                "Ausência de reunião inicial de execução do contrato (e seu registro formal)",
+                "Deficiência na designação dos membros da equipe de fiscalização e de seus substitutos (ausência de gestor, suplentes, e/ou fiscal requisitante na portaria)",
+                "Atraso na formalização e publicação da portaria de fiscalização (Proad 4858/2019)",
+                "Conflito normativo e insegurança jurídica na designação de fiscal requisitante/demandante",
+                "Equipe de fiscalização não apontou irregularidades para fins de possível aplicação de glosa (Proad 4858/2019)",
+                "Análise de Riscos elaborada na fase de planejamento não é atualizada no decorrer da execução contratual",
+                "Métrica Unidade de Serviço Técnico (UST) mostra-se inadequada para serviços que não geram resultados ou produtos aferíveis",
+                "Avaliação da quantidade de contratos sob responsabilidade de cada fiscal é realizada de forma empírica, sem critérios objetivos",
+                "Concentração excessiva de atividades de fiscalização (um servidor fiscal administrativo de 67 contratos, metade fiscalizada tecnicamente por apenas 4 servidores)",
+                "Prejuízo à qualidade da fiscalização dos contratos devido à sobrecarga de trabalho",
+                "Quantitativo de pessoal de TI insuficiente para atender as necessidades do TRT5",
+                "Integrantes da equipe de fiscalização não têm ciência expressa da indicação de suas respectivas funções antes de serem formalmente designados",
+                "Risco de vazamento de informações"
+            ],
+            "grau_completude_documental": "medio"
+        }
+    },
+    "comparacao": {
+        "percentual_aderencia": 0,
+        "entregaveis_comprovados": [],
+        "entregaveis_nao_comprovados": [
+            "[Protótipo] Elaboração de protótipo ou wireframe",
+            "[Imagem] Elaboração de ícone ou imagem vetorial",
+            "[Backlog] Organização e priorização do backlog geral do produto e das tarefas do sprint",
+            "[Modelo] Modelo de dados",
+            "[sprint-review-restrospective] Sprint review-retrospective",
+            "[user-story] Especificação de funcionalidade por meio de História do Usuário (user story)",
+            "[plano-trabalho] Elaborar plano de trabalho",
+            "[arquitetura] Elaboração do Desenho/Arquitetura da solução",
+            "[avaliacao-squad] Elaboração de documento de avaliação de squad",
+            "[backend] Criação de funcionalidade no backend do sistema",
+            "[backend-alteracao] Alteração ou reuso de funcionalidade no backend do sistema",
+            "[[teste-unitario] Criação de teste automatizado de back-end",
+            "[teste-unitario-alteracao] Alteração de teste de bac-kend",
+            "[relatorio] Elaboração de relatório em arquivo",
+            "[relatorio-alteracao] Alteração de relatório em arquivo",
+            "[frontend] Criação de funcionalidade de usabilidade no front end",
+            "[frontend-alteracao] Alteração ou reuso de funcionalidade de usabilidade no front end e adição de funcionalidade simples",
+            "[problema] Verificação e registro de problema",
+            "[deploy] Deploy de sistema",
+            "[configuracao-sistema] Configuração de sistema",
+            "[Componente] Configuração ou execução de componente (Biblioteca/Rotina/Extensão)",
+            "[Script] Elaboração e execução de scripts",
+            "[Teste] Teste funcional",
+            "[Registro-tarefa] Registro de ocorrências e tarefas (Itop e Redmine)",
+            "[Suporte] Suporte",
+            "[Manual-usuário] Elaboração de manual de usuário",
+            "[Documento] Elaboração de documentação auxiliar",
+            "[Parecer-técnico] Análise e elaboração de Parecer técnico de sistemas",
+            "[Configuracao] Configuração de sistema e/ou perfil",
+            "[Treinamento - presencial] Realizar treinamento técnico presencial",
+            "[Reunião] Participação em reuniões"
+        ],
+        "riscos_identificados": [
+            "TRT5 ainda não possui uma política de gestão de riscos totalmente implantada",
+            "Unidades administrativas, em regra, ainda não têm seus riscos identificados e tratados com metodologia adequada",
+            "Deficiência na Segurança da Informação no que tange à declaração de manutenção de sigilo e respeito às normas de segurança vigentes (Termo de Compromisso/Ciência)",
+            "Falha no histórico das ocorrências contratuais (ausência de registros formais por ordem cronológica)",
+            "Deficiência na verificação das regularidades fiscais, trabalhistas e previdenciárias pela equipe de fiscalização",
+            "Risco de responsabilização da Administração Pública por passivos fiscais, trabalhistas ou previdenciários de contratadas",
+            "Deficiência nos elementos mínimos das Ordens de Serviços (ausência de cronograma, tarefas significativas e prazos), o que pode impactar a gestão dos prazos e a qualificação do fator de complexidade e ajuste de UST, gerando divergências no cálculo da remuneração.",
+            "Ausência de reunião inicial de execução do contrato (e seu registro formal)",
+            "Deficiência na designação dos membros da equipe de fiscalização e de seus substitutos (ausência de gestor, suplentes, e/ou fiscal requisitante na portaria)",
+            "Conflito normativo e insegurança jurídica na designação de fiscal requisitante/demandante",
+            "Equipe de fiscalização não apontou irregularidades para fins de possível aplicação de glosa (Proad 4858/2019), o que representa um risco de não cumprimento dos objetivos da sprint e não atendimento às especificações.",
+            "Análise de Riscos elaborada na fase de planejamento não é atualizada no decorrer da execução contratual",
+            "Métrica Unidade de Serviço Técnico (UST) mostra-se inadequada para serviços que não geram resultados ou produtos aferíveis, reforçando a subjetividade na qualificação do fator de complexidade.",
+            "Avaliação da quantidade de contratos sob responsabilidade de cada fiscal é realizada de forma empírica, sem critérios objetivos",
+            "Concentração excessiva de atividades de fiscalização (um servidor fiscal administrativo de 67 contratos, metade fiscalizada tecnicamente por apenas 4 servidores)",
+            "Prejuízo à qualidade da fiscalização dos contratos devido à sobrecarga de trabalho",
+            "Quantitativo de pessoal de TI insuficiente para atender as necessidades do TRT5",
+            "Integrantes da equipe de fiscalização não têm ciência expressa da indicação de suas respectivas funções antes de serem formalmente designados",
+            "Risco de vazamento de informações, reforçando o risco de quebra de sigilo de informações restritas do TJAM."
+        ],
+        "alertas_prazo": [
+            "Atraso na formalização e publicação da portaria de fiscalização (Proad 4858/2019), evidenciando falha em prazo processual do contrato.",
+            "Deficiência nos elementos mínimos das Ordens de Serviços (ausência de cronograma, tarefas significativas e prazos), o que impede a avaliação precisa do cumprimento dos prazos associados aos entregáveis e aumenta o risco de atrasos na execução das demandas (Indicador 1 - IOSEP).",
+            "Ausência de evidências diretas do cumprimento dos prazos específicos para cada entregável de software, conforme Ordens de Serviço e cláusulas de aceite provisório/definitivo, uma vez que a evidência apresentada não se refere à execução direta dos entregáveis do contrato."
+        ],
+        "recomendacao_fiscal": "aprovar_com_ressalvas",
+        "justificativa_tecnica": "A evidência apresentada consiste em um relatório de auditoria sobre a *gestão e fiscalização de contratos de TIC* do TRT5, e não em documentos de comprovação de entrega e aceite dos *entregáveis específicos* do CONTRATO de UST. Por isso, não há comprovação direta dos entregáveis de software listados (protótipos, códigos, modelos, etc.) nem do atendimento aos seus critérios de aceite. O percentual de aderência aos entregáveis do contrato é 0% devido à natureza da evidência. \n\nNo entanto, a evidência é rica em apontamentos de riscos e deficiências no processo de gestão e fiscalização de contratos de TI, que impactam diretamente a execução de contratos como o analisado. Foram identificados riscos relacionados à política de gestão de riscos, segurança da informação, falha no histórico das ocorrências contratuais, deficiências na verificação de regularidades fiscais, problemas na formalização de Ordens de Serviço (cronograma, tarefas, prazos), ausência de reuniões iniciais formais, inadequação da designação da equipe de fiscalização e a não atualização da análise de riscos. Um risco crítico apontado é a inadequação da métrica UST para serviços que não geram resultados aferíveis, o que reforça a subjetividade na qualificação do fator de complexidade já presente nos riscos contratuais. Além disso, a sobrecarga de trabalho dos fiscais foi identificada como um fator que prejudica a qualidade da fiscalização.\n\nConstatou-se um atraso na formalização e publicação da portaria de fiscalização (Proad 4858/2019) e uma deficiência sistêmica nos elementos mínimos das Ordens de Serviço (ausência de cronograma, tarefas e prazos), o que torna inviável o controle efetivo dos prazos dos entregáveis e do contrato como um todo. Embora a evidência de auditoria tenha um grau de completude médio para seu propósito, ela não comprova a execução dos itens contratuais específicos. \n\nDiante da ausência de evidências dos entregáveis e dos múltiplos riscos e deficiências processuais identificados, a recomendação é *aprovar com ressalvas*. Esta aprovação está condicionada à exigência de documentação adequada para os entregáveis específicos do contrato em futuras medições e à implementação das recomendações da auditoria para aprimorar a gestão, fiscalização, e controle de riscos dos contratos de TIC, em conformidade com a Lei 14.133/2021 e as boas práticas de governança."
+    },
+    "score_hibrido": 12
+}

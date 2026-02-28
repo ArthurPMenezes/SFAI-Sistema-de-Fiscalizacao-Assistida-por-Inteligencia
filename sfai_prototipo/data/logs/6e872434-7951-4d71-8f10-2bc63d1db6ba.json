@@ -1,0 +1,37 @@
+{
+    "analise_id": "6e872434-7951-4d71-8f10-2bc63d1db6ba",
+    "timestamp": "2026-02-28T19:06:22.344374+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": false,
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": null
+    },
+    "evidencia": {
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento",
+            "verificacao_estrutura_tecnica",
+            "verificacao_tamanho_documento"
+        ],
+        "conformidades": [
+            "Documento com volume compatível"
+        ],
+        "nao_conformidades": [
+            "Ausência de evidência real de testes",
+            "Nenhum hash de commit identificado",
+            "Documento fraco em indicadores técnicos"
+        ],
+        "score_deterministico": 25,
+        "nivel_risco": "alto",
+        "analise_ia": null
+    },
+    "comparacao": null,
+    "score_hibrido": null
+}

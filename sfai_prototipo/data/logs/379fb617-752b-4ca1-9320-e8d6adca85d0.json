@@ -1,0 +1,37 @@
+{
+    "analise_id": "379fb617-752b-4ca1-9320-e8d6adca85d0",
+    "timestamp": "2026-02-28T18:56:42.884631+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": false,
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": null
+    },
+    "evidencia": {
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "R01",
+            "R02",
+            "R03",
+            "R04"
+        ],
+        "conformidades": [
+            "Presença de testes automatizados",
+            "Evidência de versionamento",
+            "Descrição técnica mínima"
+        ],
+        "nao_conformidades": [
+            "Presença de data formal"
+        ],
+        "score_deterministico": 85,
+        "nivel_risco": "baixo",
+        "analise_ia": null
+    },
+    "comparacao": null,
+    "score_hibrido": null
+}

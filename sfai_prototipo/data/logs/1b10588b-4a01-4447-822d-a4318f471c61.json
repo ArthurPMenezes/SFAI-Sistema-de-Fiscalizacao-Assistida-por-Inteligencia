@@ -1,0 +1,434 @@
+{
+    "analise_id": "1b10588b-4a01-4447-822d-a4318f471c61",
+    "timestamp": "2026-02-28T18:56:42.884631+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": true,
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": {
+            "tipo_contrato": "UST",
+            "objeto": "Contratação de empresa para prestação de serviços de análise, desenvolvimento, manutenção, documentação, suporte e teste de software, na forma de serviços continuados presenciais e não presenciais, contemplando a transferência de conhecimento e agregação tecnológica, respeitando os padrões de desenvolvimento, desempenho e qualidade estabelecidos pelo Tribunal de Justiça do Estado do Amazonas - TJAM por um período de 12 meses.",
+            "entregaveis": [
+                {
+                    "descricao": "Elaboração de protótipo ou wireframe",
+                    "criterios_aceite": [
+                        "Produto: Protótipo de tela em arquivo no formato PDF. Outros formatos podem ser requeridos.",
+                        "Complexidade Alta: para telas com 10 a 15 itens de interação.",
+                        "Complexidade Altíssima: para telas com mais de 15 itens de interação."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Elaboração de ícone ou imagem vetorial",
+                    "criterios_aceite": [
+                        "Produto: Ícone ou imagem vetorial disponibilizadas nos formatos PNG, JPG e SVG."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Backlog (organização e priorização)",
+                    "criterios_aceite": [
+                        "Para até 7 user-stories ou demandas de sustentação.",
+                        "Complexidade Altíssima: para backlog contendo três ou mais atividades de user-story com mais de 10 critérios de aceitação cada."
+                    ],
+                    "prazo_associado": "Recorrente a cada ciclo iterativo (sprint)"
+                },
+                {
+                    "descricao": "Modelo de dados (análise e desenho de entidades)",
+                    "criterios_aceite": [
+                        "Produto: Arquivo em PDF e PNG. Contendo diagrama de Classes em padrão UML ou diagrama equivalente como Diagrama de Entidade Relacionamento DER que descreva as entidades do sistema e seus relacionamentos.",
+                        "Complexidade Altíssima: para modelos com mais de 10 objetos."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Sprint review-retrospective",
+                    "criterios_aceite": [
+                        "Produto: Descrição da reunião de revisão, incluindo participantes, assunto da review e resumo das lições aprendidas."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS) para cada sprint"
+                },
+                {
+                    "descricao": "Especificação de funcionalidade por meio de História do Usuário (user story)",
+                    "criterios_aceite": [
+                        "Produto: Documento História de Usuário registrada no Redmine.",
+                        "Por critério de aceitação.",
+                        "Complexidade Altíssima: para user-story contendo mais de 20 critérios de aceitação."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Elaborar plano de trabalho",
+                    "criterios_aceite": [
+                        "Produto: Plano de trabalho."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Elaboração do Desenho/Arquitetura da solução",
+                    "criterios_aceite": [
+                        "Produto: Diagrama contendo a arquitetura da solução apresentada em formato PDF ou PNG. Outros formatos podem ser requeridos.",
+                        "Complexidade Altíssima: para sistemas envolvendo complexidade arquitetural alta como integração com sistemas distribuídos."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Elaboração de documento de avaliação de squad",
+                    "criterios_aceite": [
+                        "Produto: Documento de avaliação de squads.",
+                        "Requer autorização prévia."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Criação de funcionalidade no backend do sistema",
+                    "criterios_aceite": [
+                        "Produto: Código da implementação incorporado ao sistema e adicionado ao repositório, ou sistema de controle de versão.",
+                        "Por quantidade de operações CRUD.",
+                        "Complexidade Altíssima: para atividades com 4 unidades elementares CRUD."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Alteração ou reuso de funcionalidade no backend do sistema",
+                    "criterios_aceite": [
+                        "Produto: Código da implementação incorporado ao sistema e adicionado ao repositório, ou sistema de controle de versão.",
+                        "Por quantidade de operações CRUD.",
+                        "Complexidade Altíssima: para atividades com 4 unidades elementares CRUD."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Criação de teste automatizado de back-end",
+                    "criterios_aceite": [
+                        "Produto: Código da implementação do teste incorporado ao sistema e adicionado ao repositório, ou sistema de controle de versão.",
+                        "Por quantidade de funcionalidade de back-end coberta.",
+                        "Complexidade Altíssima: para teste cobrindo back-end com 4 unidades elementares CRUD."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Alteração de teste de back-end",
+                    "criterios_aceite": [
+                        "Produto: Código da implementação do teste incorporado ao sistema e adicionado ao repositório, ou sistema de controle de versão.",
+                        "Por quantidade de funcionalidade de back-end coberta.",
+                        "Complexidade Altíssima: para teste cobrindo back-end com 4 unidades elementares CRUD."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Elaboração de relatório em arquivo",
+                    "criterios_aceite": [
+                        "Produto: Código da implementação incorporado ao sistema e adicionado ao repositório, ou sistema de controle de versão.",
+                        "Complexidade Alta: para relatórios contendo de 10 a 15 campos de informação.",
+                        "Complexidade Altíssima: para relatórios com mais de 15 campos de informação."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Alteração de relatório em arquivo",
+                    "criterios_aceite": [
+                        "Produto: Código da implementação incorporado ao sistema e adicionado ao repositório, ou sistema de controle de versão.",
+                        "Complexidade Alta: para relatórios contendo de 10 a 15 campos de informação.",
+                        "Complexidade Altíssima: para relatórios com mais de 15 campos de informação."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Criação de funcionalidade de usabilidade no front end",
+                    "criterios_aceite": [
+                        "Produto: Código da implementação incorporado ao sistema e adicionado ao repositório, ou sistema de controle de versão.",
+                        "Por quantidade de funcionalidade.",
+                        "Complexidade Altíssima: para funcionalidades com necessidade de negócio complexa."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Alteração ou reuso de funcionalidade de usabilidade no front end e adição de funcionalidade simples",
+                    "criterios_aceite": [
+                        "Produto: Código da implementação incorporado ao sistema e adicionado ao repositório, ou sistema de controle de versão.",
+                        "Por quantidade de funcionalidade.",
+                        "Complexidade Altíssima: para funcionalidades com necessidade de negócio complexa."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Verificação e registro de problema",
+                    "criterios_aceite": [
+                        "Produto: Descrição textual sobre análise realizada, pode incluir testes, procedimentos e conclusão.",
+                        "UST: 2 para erro que não seja da contratada, 0 para garantia.",
+                        "Complexidade Altíssima: para atendimento fora do horário de trabalho padrão."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Deploy de sistema",
+                    "criterios_aceite": [
+                        "Produto: Registro do deploy em ferramenta automatizada ou registro de atividades realizadas por meio de ferramenta de registro de operações.",
+                        "Complexidade Altíssima: para atendimento emergencial fora da janela de deploy."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Configuração de sistema",
+                    "criterios_aceite": [
+                        "Produto: Descrição e registro da atividade.",
+                        "Complexidade Altíssima: para configuração de sistemas legados."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Configuração ou execução de componente (Biblioteca/Rotina/Extensão)",
+                    "criterios_aceite": [
+                        "Produto: Descrição e registro da atividade e código adicionado ao repositório quando aplicável."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Elaboração e execução de scripts",
+                    "criterios_aceite": [
+                        "Produto: Script SQL; Arquivo no formato CSV (quando solicitado)."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Teste funcional",
+                    "criterios_aceite": [
+                        "Produto: Registro dos resultados dos testes na tarefa associada do Redmine.",
+                        "Por critério de aceitação ou funcionalidade."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Registro de ocorrências e tarefas (Itop e Redmine)",
+                    "criterios_aceite": [
+                        "Produto: Relatório de registros."
+                    ],
+                    "prazo_associado": "Definido por demanda"
+                },
+                {
+                    "descricao": "Suporte",
+                    "criterios_aceite": [
+                        "Produto: Registro de demanda e registro de eventuais interações com as áreas relacionadas ou usuário demandante."
+                    ],
+                    "prazo_associado": "Definido por demanda"
+                },
+                {
+                    "descricao": "Elaboração de manual de usuário",
+                    "criterios_aceite": [
+                        "Produto: Documentação de usuário em arquivo no formato PDF. Outros formatos podem ser requeridos, incluindo conteúdo para ajuda online.",
+                        "Por História de Usuário ou Funcionalidade."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Elaboração de documentação auxiliar",
+                    "criterios_aceite": [
+                        "Produto: Documentação produzida em formato PDF e descrição de justificativa do motivo do documento e do tempo gasto na elaboração do documento.",
+                        "Requer autorização prévia."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Análise e elaboração de Parecer técnico de sistemas",
+                    "criterios_aceite": [
+                        "Produto: Documento de parecer técnico e outros artefatos/anexos caso necessário.",
+                        "Requer autorização prévia."
+                    ],
+                    "prazo_associado": "Definido por Ordem de Serviço (OS)"
+                },
+                {
+                    "descricao": "Configuração de sistema e/ou perfil",
+                    "criterios_aceite": [
+                        "Produto: Relatório de atividades."
+                    ],
+                    "prazo_associado": "Definido por demanda"
+                },
+                {
+                    "descricao": "Realizar treinamento técnico presencial",
+                    "criterios_aceite": [
+                        "Produto: Documento constando o plano de aula, carga horária e lista de participantes."
+                    ],
+                    "prazo_associado": "Definido por demanda"
+                },
+                {
+                    "descricao": "Participação em reuniões",
+                    "criterios_aceite": [
+                        "Produto: Registro do esclarecimento, ata de reunião ou lista de presença."
+                    ],
+                    "prazo_associado": "Definido por demanda"
+                }
+            ],
+            "prazos_gerais": [
+                "Vigência do contrato: 12 (doze) meses a partir da data de assinatura, podendo ser prorrogado.",
+                "Avaliação de entregáveis (recebimento provisório): até 10 (dez) dias.",
+                "Recebimento definitivo: 10 (dez) dias úteis após o recebimento provisório.",
+                "Prazo para substituição de equipamento e/ou ajustes nos serviços em caso de recusa: 15 (quinze) dias úteis.",
+                "Pagamento: até 30 (trinta) dias após aceitação pelo TJAM da Nota Fiscal Eletrônica/Fatura.",
+                "Apresentação do relatório de fechamento mensal pela Contratada: em no máximo 5 (cinco) dias úteis a contar do encerramento do período de aferição.",
+                "Análise e aprovação do relatório de fechamento pelo TJAM: até 15 (quinze) dias úteis.",
+                "Prazo para a Contratada formar a equipe solicitada após abertura de OS: até 30 (trinta) dias corridos.",
+                "Prazo para a Contratada substituir profissional com desempenho insatisfatório: 30 (trinta) dias corridos.",
+                "Prazos específicos para cada atividade/Ordem de Serviço (OS) serão definidos e formalizados posteriormente."
+            ],
+            "valor_global": null,
+            "obrigações_relevantes": [
+                "Manter, durante a execução do contrato, compatibilidade com as obrigações assumidas (Contratada).",
+                "Reparar, corrigir ou substituir, às suas expensas, o objeto do contrato com vícios, defeitos ou incorreções (Contratada).",
+                "Responder pelos danos causados à Contratante ou a terceiros, decorrentes de culpa ou dolo (Contratada).",
+                "Responder por todas as despesas decorrentes da execução dos serviços em relação aos seus empregados (Contratada).",
+                "Respeitar as normas de controle de bens e de fluxo de pessoas nas dependências da Contratante (Contratada).",
+                "Manter preposto durante a vigência do contrato para representá-la (Contratada).",
+                "Não realizar veiculação de publicidade sem prévia autorização da Contratante (Contratada).",
+                "Não realizar a subcontratação dos serviços (Contratada).",
+                "Não se eximir do cumprimento integral do contrato (Contratada).",
+                "Comunicar à Contratada qualquer ocorrência relacionada à execução dos serviços (Contratante).",
+                "Proporcionar as facilidades necessárias ao bom desempenho do objeto contratado (Contratante).",
+                "Fiscalizar a execução dos serviços, podendo sustar, recusar, mandar fazer ou desfazer (Contratante).",
+                "Designar servidor para acompanhar e fiscalizar a execução do contrato (Contratante).",
+                "Rejeitar, no todo ou em parte, serviço ou fornecimento executado em desacordo (Contratante).",
+                "Efetuar o pagamento à Contratada, de acordo com as condições de preço e prazo (Contratante).",
+                "Receber o objeto no horário de funcionamento das unidades responsáveis pelo recebimento (Contratante).",
+                "Solicitar a substituição do objeto do contrato em que se verificarem vícios, defeitos ou incorreções (Contratante).",
+                "Providenciar a integração em tempo real entre seu sistema de gestão de demandas e o sistema de controle da Contratante (Contratada).",
+                "Fornecer informações atualizadas a respeito da situação de cada Ordem de Serviço, sempre que solicitada (Contratada).",
+                "Realizar verificação da qualidade dos produtos gerados antes de sua entrega (Contratada).",
+                "Obrigatoriamente demonstrar a execução do serviço disponibilizando-o no ambiente de homologação e o código da versão final (deploy) (Contratada).",
+                "Formalizar, por e-mail ou outro meio, informações sobre a versão do deploy, caminho completo da versão no repositório, descrição dos serviços realizados, atesto de realização e testes mínimos funcionais (Contratada).",
+                "Apresentar mensalmente, em até 5 dias úteis, relatório de fechamento relacionando as O.S. ou parcelas remuneráveis concluídas (Contratada).",
+                "Verificar se todos os artefatos foram entregues, se o sistema atende às necessidades da área demandante (check list de requisitos) e ao modelo de avaliação de interface do TJAM (Contratante)."
+            ],
+            "riscos_contratuais_identificados": [
+                "Descumprimento da vedação de subcontratação.",
+                "Não apresentação da garantia contratual (5% do valor total) ou não reforço da garantia em caso de prorrogação/acréscimo, sujeitando a penalidades administrativas e rescisão unilateral.",
+                "Ocorrência de vícios, defeitos ou incorreções no objeto/serviços/entregáveis.",
+                "Atraso na execução dos serviços ou fornecimentos.",
+                "Não atendimento das especificações dispostas no Termo de Referência ou indicado na proposta, podendo levar à recusa parcial ou total do produto/serviço.",
+                "Suspensão dos prazos de pagamento caso o produto entregue esteja em desconformidade.",
+                "Recusa de pagamento se os serviços não estiverem de acordo com as especificações e aceitação do TJAM.",
+                "Aplicação de multa de 0,2% do valor da solicitação por hora de atraso no cumprimento dos prazos definidos para início e término de atendimento.",
+                "Glosa de 2% no valor da Ordem de Serviço por Indicador de Ordem de Serviço Executada no Prazo (IOSEP) Inaceitável (6 ou inferior).",
+                "Glosa de 10% no valor da entrega por Ordem de Serviço se o Indicador de Sprint Satisfatória (ISS) for Inaceitável (não entrega de duas ou mais tarefas ou falha grave nas cerimônias/aderência aos valores de agilidade).",
+                "Não formação da equipe solicitada no prazo de 30 dias corridos após abertura da OS.",
+                "Não substituição de profissional notificado por baixo desempenho no prazo de 30 dias corridos.",
+                "Quebra de sigilo e confidencialidade das informações restritas do TJAM, podendo levar à rescisão contratual e pagamento de perdas e danos, inclusive morais, além de responsabilidades civil e criminal.",
+                "Uso indevido (acesso não autorizado, conexão de componentes externos, uso para fins comerciais/pessoais extensivos) de equipamentos, informações e Sistemas Informatizados do TJAM.",
+                "Utilização de produtos de software sem as licenças de uso válidas.",
+                "Divergência entre informações atestadas e serviços efetivamente realizados em atestados de capacidade técnica, resultando na desconsideração do atestado e possível aplicação de penalidades por atitude inidônea."
+            ]
+        }
+    },
+    "evidencia": {
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "R01",
+            "R02",
+            "R03",
+            "R04"
+        ],
+        "conformidades": [
+            "Presença de testes automatizados",
+            "Evidência de versionamento",
+            "Descrição técnica mínima"
+        ],
+        "nao_conformidades": [
+            "Presença de data formal"
+        ],
+        "score_deterministico": 85,
+        "nivel_risco": "baixo",
+        "analise_ia": {
+            "atividades_executadas": [
+                "Execução de testes automatizados unitários",
+                "Execução de testes de integração",
+                "Processo formal de homologação e validação final pelo cliente",
+                "Versionamento do código-fonte em repositório Git institucional",
+                "Registro de commits com identificação de branch e histórico completo"
+            ],
+            "entregaveis_mencionados": [
+                "Solução (homologada)",
+                "Código-fonte",
+                "Relatório de testes (anexado)",
+                "Documento de aceite técnico assinado (anexado)"
+            ],
+            "datas_identificadas": [],
+            "artefatos_tecnicos_mencionados": [
+                "Testes automatizados unitários",
+                "Testes de integração",
+                "Relatório de testes",
+                "Repositório Git institucional",
+                "Código-fonte",
+                "Commits",
+                "Branch (Git)",
+                "Histórico completo (Git)",
+                "Documento de aceite técnico"
+            ],
+            "indicadores_qualidade": [
+                "Todos os testes passaram com sucesso",
+                "Solução passou por processo formal de homologação e validação final",
+                "Entrega realizada conforme contrato e critérios técnicos estabelecidos"
+            ],
+            "menção_aceite_formal": true,
+            "indicios_risco": [
+                "Ausência da data específica do 'Documento de aceite técnico assinado'.",
+                "Referências a documentos anexados ('relatório anexado', 'Documento de aceite técnico assinado em anexo') sem que estes sejam providos para verificação direta na evidência atual.",
+                "Presença de string não contextualizada ('pitomba') no final do documento, o que pode indicar incompletude ou informalidade da evidência."
+            ],
+            "grau_completude_documental": "medio"
+        }
+    },
+    "comparacao": {
+        "percentual_aderencia": 75,
+        "entregaveis_comprovados": [
+            "Criação de funcionalidade no backend do sistema",
+            "Alteração ou reuso de funcionalidade no backend do sistema",
+            "Criação de teste automatizado de back-end",
+            "Alteração de teste de back-end",
+            "Criação de funcionalidade de usabilidade no front end",
+            "Alteração ou reuso de funcionalidade de usabilidade no front end e adição de funcionalidade simples",
+            "Deploy de sistema",
+            "Configuração ou execução de componente (Biblioteca/Rotina/Extensão)",
+            "Teste funcional",
+            "Aceite técnico formal da solução (via 'Documento de aceite técnico assinado')"
+        ],
+        "entregaveis_nao_comprovados": [
+            "Elaboração de protótipo ou wireframe",
+            "Elaboração de ícone ou imagem vetorial",
+            "Backlog (organização e priorização)",
+            "Modelo de dados (análise e desenho de entidades)",
+            "Sprint review-retrospective",
+            "Especificação de funcionalidade por meio de História do Usuário (user story)",
+            "Elaborar plano de trabalho",
+            "Elaboração do Desenho/Arquitetura da solução",
+            "Elaboração de documento de avaliação de squad",
+            "Verificação e registro de problema",
+            "Configuração de sistema",
+            "Elaboração e execução de scripts",
+            "Registro de ocorrências e tarefas (Itop e Redmine)",
+            "Suporte",
+            "Elaboração de manual de usuário",
+            "Elaboração de documentação auxiliar",
+            "Análise e elaboração de Parecer técnico de sistemas",
+            "Configuração de sistema e/ou perfil",
+            "Realizar treinamento técnico presencial",
+            "Participação em reuniões"
+        ],
+        "riscos_identificados": [
+            "Não comprovação de cumprimento de prazos devido à ausência de datas na evidência, especialmente para o aceite formal.",
+            "Incompletude da evidência documental, com menção a documentos anexados ('relatório anexado', 'Documento de aceite técnico assinado em anexo') que não foram providos para verificação direta, o que impede a validação da obrigação de 'Formalizar... informações sobre a versão do deploy, descrição dos serviços, atesto de realização e testes mínimos funcionais'.",
+            "Impossibilidade de verificar critérios de aceite quantitativos e de complexidade (e.g., número de itens de interação, operações CRUD, campos de informação em relatórios) devido à generalidade da evidência e ausência dos documentos detalhados.",
+            "Ausência de detalhamento das funcionalidades específicas entregues na 'Solução (homologada)', dificultando a rastreabilidade com as Ordens de Serviço (OS) e os critérios de aceitação específicos de cada Unidade de Serviço Técnico (UST).",
+            "Potencial informalidade ou incompletude da evidência devido à presença de conteúdo não contextualizado ('pitomba') no final do documento."
+        ],
+        "alertas_prazo": [
+            "A ausência de datas específicas na evidência impede a verificação do cumprimento dos prazos contratuais gerais (ex: recebimento provisório, definitivo) e dos prazos definidos por Ordem de Serviço, representando um alerta crítico para a gestão de prazos."
+        ],
+        "recomendacao_fiscal": "aprovar_com_ressalvas",
+        "justificativa_tecnica": "A evidência apresentada demonstra forte aderência aos processos técnicos de desenvolvimento de software, incluindo a criação e alteração de funcionalidades de backend e frontend, desenvolvimento de testes automatizados unitários e de integração, execução de testes funcionais, versionamento de código-fonte em repositório institucional (Git) com histórico completo de commits, e a realização de um processo formal de homologação e validação final pelo cliente, culminando na entrega de uma 'Solução (homologada)'. A menção explícita a um 'Documento de aceite técnico assinado' reforça a conclusão da fase de aceite e o atendimento à obrigação de 'Verificar se todos os artefatos foram entregues, se o sistema atende às necessidades da área demandante'.\n\nNo entanto, a verificação da conformidade plena é significativamente prejudicada pela ausência de informações críticas. Não há datas explícitas na evidência, impossibilitando a aferição do cumprimento de quaisquer prazos contratuais ou específicos de Ordem de Serviço, o que representa um risco considerável. Documentos cruciais, como o 'Relatório de testes' e o próprio 'Documento de aceite técnico assinado', são apenas mencionados como 'anexados', mas não foram providos para análise direta dentro da evidência estruturada. Além disso, a generalidade da descrição da 'Solução (homologada)' não permite rastrear funcionalidades específicas nem verificar os critérios de aceite quantitativos ou de complexidade definidos em contrato (ex: número de operações CRUD, itens de interação, campos de informação em relatórios). A presença de uma string não contextualizada ('pitomba') no final da evidência pode indicar falta de formalidade ou incompletude.\n\nPara uma aprovação plena e mitigação dos riscos identificados, seria fundamental o fornecimento dos documentos anexados mencionados, datas detalhadas dos eventos de entrega e aceite, e uma descrição mais granular das funcionalidades implementadas, bem como a complexidade associada, para validação contra os critérios de UST definidos no contrato."
+    },
+    "score_hibrido": 80
+}
