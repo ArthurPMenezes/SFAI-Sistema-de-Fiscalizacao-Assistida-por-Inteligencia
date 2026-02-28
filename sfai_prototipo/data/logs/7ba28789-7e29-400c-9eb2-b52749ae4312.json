@@ -1,0 +1,41 @@
+{
+    "analise_id": "7ba28789-7e29-400c-9eb2-b52749ae4312",
+    "timestamp": "2026-02-27T22:48:37.078263+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": true,
+    "contrato": {
+        "arquivo": "data/uploads/contrato (2).pdf",
+        "analise_ia": {
+            "erro_parse": true,
+            "resposta_bruta": "```json\n{\n  \"objeto\": \"Contratação de empresa para prestação de serviços continuados de análise, desenvolvimento, manutenção, documentação, suporte e teste de software, incluindo transferência de conhecimento e agregação tecnológica, respeitando os padrões de desenvolvimento, desempenho e qualidade estabelecidos pelo Tribunal de Justiça do Estado do Amazonas (TJAM), conforme detalhado no ANEXO I - Catálogo de Atividades.\",\n  \"entregaveis\": [\n    \"Protótipos e wireframes (em formato PDF ou outros requeridos)\",\n    \"Ícones e imagens vetoriais (PNG, JPG, SVG)\",\n    \"Backlog de produto organizado e priorizado\",\n    \"Modelos de dados (diagramas de Classes UML ou DER em PDF, PNG)\",\n    \"Descrições de reuniões de Sprint Review e Retrospective\",\n    \"Especificações de funcionalidades por meio de Histórias de Usuário (user stories) registradas no Redmine\",\n    \"Planos de trabalho\",\n    \"Diagramas de arquitetura da solução (PDF, PNG)\",\n    \"Documentos de avaliação de squads\",\n    \"Códigos-fonte de funcionalidades (backend e frontend), testes unitários e relatórios, incorporados ao sistema e repositório de controle de versão\",\n    \"Registros de análise e verificação de problemas\",\n    \"Registros de deploy de sistema\",\n    \"Descrições e registros de configuração de sistema e componentes\",\n    \"Scripts SQL e arquivos CSV (quando solicitados)\",\n    \"Registros dos resultados de testes funcionais\",\n    \"Relatórios de registros de ocorrências e tarefas\",\n    \"Registros de demanda e interações de suporte\",\n    \"Manuais de usuário (PDF, conteúdo para ajuda online)\",\n    \"Documentação auxiliar (PDF)\",\n    \"Pareceres técnicos de sistemas\",\n    \"Documentos de treinamento (plano de aula, carga horária e lista de participantes)\",\n    \"Registros de reuniões (esclarecimentos, atas ou listas de presença)\"\n  ],\n  \"prazos\": {\n    \"Vigência do Contrato\": \"12 (doze) meses, prorrogável\",\n    \"Cronograma de Execução\": \"Realizado e formalizado posteriormente para cada atividade (sob demanda via Ordem de Serviço - OS)\",\n    \"Formação de Equipe após OS\": \"Até 30 (trinta) dias corridos\",\n    \"Substituição de Profissional\": \"Até 30 (trinta) dias corridos após notificação do TJAM\",\n    \"Recebimento Provisório dos Entregáveis\": \"Até 10 (dez) dias para avaliação\",\n    \"Recebimento Definitivo dos Serviços\": \"10 (dez) dias úteis, contados do recebimento provisório\",\n    \"Ajustes/Substituição de Serviços Recusados\": \"Máximo de 15 (quinze) dias úteis a partir da comunicação do não aceite\",\n    \"Apresentação do Relatório Mensal de Fechamento pela Contratada\": \"Em no máximo 5 (cinco) dias úteis a contar do encerramento do período de aferição\",\n    \"Análise e Aprovação do Relatório de Fechamento pelo TJAM\": \"Até 15 (quinze) dias úteis do recebimento\",\n    \"Nova Análise de Relatório Reapresentado\": \"5 (cinco) dias úteis para cada reapresentação\",\n    \"Pagamento\": \"Em até 30 (trinta) dias após aceitação da Nota Fiscal Eletrônica/Fatura\"\n  },\n  \"criterios_aceite\": [\n    \"Conformidade dos serviços e produtos com as especificações do Termo de Referência e padrões de desenvolvimento, desempenho e qualidade do TJAM.\",\n    \"Aceite da Ordem de Serviço (OS) apenas após todas as atividades associadas estarem finalizadas ou justificadas e aceitas pelo gestor do contrato.\",\n    \"Verificação da qualidade dos produtos pela Contratada antes da entrega e pela Contratante para o aceite. Produtos em desconformidade serão rejeitados parcial ou totalmente.\",\n    \"Validação do ciclo de avaliação de serviço de implementação de software pela demonstração da execução em ambiente de homologação do TJAM e disponibilização do código da versão final (deploy).\",\n    \"Formalização por e-mail (ou outro meio) das informações sobre a versão do deploy, caminho do repositório, descrição dos serviços e atesto de testes funcionais mínimos.\",\n    \"Verificação de entrega de todos os artefatos, atendimento das necessidades da área demandante (checklist de requisitos) e do modelo de avaliação de interface do TJAM.\",\n    \"Aprovação do relatório de fechamento mensal pelo TJAM é condição para o recebimento definitivo e emissão da nota fiscal, que deve conter apenas serviços efetivamente concluídos.\",\n    \"Desempenho no Indicador de Ordem de Serviço Executada no Prazo (IOSEP): Aceitável (7 a 9 pontos) com advertência; Inaceitável (6 pontos ou inferior) com glosa de 2% do valor da OS.\",\n    \"Aplicação de multa de 0,2% do valor da solicitação por hora de atraso no descumprimento de prazos de atendimento.\",\n    \"Desempenho no Indicador de Sprint Satisfatória (ISS): Inaceitável (não entrega de duas ou mais user stories/correções OU falha grave em cerimônias/valores ágeis) com glosa de 10% no valor da entrega por OS.\",\n    \"Apresentação de garantia contratual equivalente a 5% do valor total do contrato.\",\n    \"Comprovação de habilitação técnico-operacional com atestados de capacidade de execução, volume igual ou superior a 50% da quantidade de UST estimadas para tecnologias relevantes (WEB com Ruby ou Java e metodologia Ágil; Banco de dados PostgreSql e Oracle).\",\n    \"Comprovação de habilitação técnico-profissional da equipe mínima exigida (Analista PO, Desenvolvedor full stack, Analista de teste, Arquiteto, Agile Coach, Analista de suporte), com vínculo, formação e experiência mínimas.\"\n  ],\n  \"valor_global\": \"Não especificado diretamente no documento. Será definido pela Divisão de Compras e Operações (DVCOP) do TJAM após pesquisa de mercado, tendo como base a estimativa de 100.000 Unidades de Serviço Técnico (UST) anuais. O pagamento será calculado por atividade, utilizando a fórmula: Valor_atividade = Valor_UST * Esforço_total_UST * Fator_ajuste.\"\n}\n```"
+        }
+    },
+    "evidencia": {
+        "arquivo": "data/uploads/RELATÓRIO DE ENTREGA TÉCNICA 1.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": {
+            "erro_parse": true,
+            "resposta_bruta": "```json\n{\n  \"objeto\": \"Entrega e validação de solução técnica de software\",\n  \"entregaveis\": [\n    \"Execução de testes automatizados (unitários e de integração)\",\n    \"Processo de homologação e validação da solução pelo cliente\",\n    \"Código-fonte versionado em repositório Git institucional\"\n  ],\n  \"prazos\": {},\n  \"criterios_aceite\": [\n    \"Passagem com sucesso de todos os testes automatizados (unitários e de integração), conforme relatório anexado\",\n    \"Homologação e validação final da solução pelo cliente, formalizada por documento de aceite técnico assinado\",\n    \"Código-fonte versionado em repositório Git institucional com commits registrados e histórico completo\",\n    \"Conformidade com os critérios técnicos estabelecidos em contrato\"\n  ],\n  \"valor_global\": \"Não informado\"\n}\n```"
+        }
+    },
+    "comparacao": {
+        "erro_parse": true,
+        "resposta_bruta": "```json\n{\n  \"objeto\": \"Não especificado no texto fornecido, que se trata de uma instrução para análise.\",\n  \"entregaveis\": [],\n  \"prazos\": {},\n  \"criterios_aceite\": [],\n  \"valor_global\": \"Não especificado\"\n}\n```"
+    }
+}

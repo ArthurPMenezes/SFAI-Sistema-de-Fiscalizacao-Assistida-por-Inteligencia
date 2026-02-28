@@ -1,0 +1,41 @@
+{
+    "analise_id": "792ad997-853b-4213-a901-071cfbea36d3",
+    "timestamp": "2026-02-27T22:48:37.078263+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": true,
+    "contrato": {
+        "arquivo": "data/uploads/contrato (2).pdf",
+        "analise_ia": {
+            "erro_parse": true,
+            "resposta_bruta": "```json\n{\n  \"objeto\": \"Contratação de empresa para prestação de serviços de análise, desenvolvimento, manutenção, documentação, suporte e teste de software, na forma de serviços continuados presenciais e não presenciais, contemplando a transferência de conhecimento e agregação tecnológica, respeitando os padrões de desenvolvimento, desempenho e qualidade estabelecidos pelo Tribunal de Justiça do Estado do Amazonas - TJAM.\",\n  \"entregaveis\": [\n    \"Protótipos de tela (PDF)\",\n    \"Ícones ou imagens vetoriais (PNG, JPG, SVG)\",\n    \"Backlog organizado e priorizado com tarefas de sprint aprovadas\",\n    \"Modelos de dados (diagramas UML ou DER em PDF, PNG)\",\n    \"Descrições de reuniões de Sprint Review e Retrospective\",\n    \"Histórias de Usuário (user stories) registradas no Redmine\",\n    \"Planos de trabalho\",\n    \"Desenhos/Arquiteturas de solução (diagramas em PDF, PNG)\",\n    \"Documentos de avaliação de squads\",\n    \"Código-fonte de funcionalidades de backend (novo ou alterado) no repositório\",\n    \"Código-fonte de testes automatizados de backend no repositório\",\n    \"Código-fonte para geração de relatórios em arquivo (novo ou alterado) no repositório\",\n    \"Código-fonte de funcionalidades de frontend (novo ou alterado) no repositório\",\n    \"Descrição textual de análise e conclusão de problemas\",\n    \"Registros de deploy de sistema\",\n    \"Descrições e registros de atividades de configuração de sistema\",\n    \"Descrições, registros e, quando aplicável, código de configuração ou execução de componentes/bibliotecas/rotinas/extensões\",\n    \"Scripts SQL e arquivos CSV\",\n    \"Registros de resultados de testes funcionais no Redmine\",\n    \"Relatórios de registros de ocorrências e tarefas\",\n    \"Registros de demandas e interações de suporte\",\n    \"Manuais de usuário (PDF ou outros formatos, incluindo ajuda online)\",\n    \"Documentação auxiliar (PDF)\",\n    \"Pareceres técnicos de sistemas\",\n    \"Relatórios de atividades de configuração de sistema e/ou perfil\",\n    \"Documentos de plano de aula, carga horária e lista de participantes para treinamentos presenciais\",\n    \"Registros de esclarecimentos, atas de reunião ou listas de presença\"\n  ],\n  \"prazos\": {\n    \"Vigência do Contrato\": \"12 (doze) meses a partir da data de assinatura, prorrogáveis.\",\n    \"Avaliação de Entregáveis (Recebimento Provisório)\": \"Até 10 (dez) dias.\",\n    \"Aceite Definitivo dos Serviços\": \"10 (dez) dias úteis, contados do recebimento provisório.\",\n    \"Substituição de Objeto/Ajustes em Caso de Não Aceite\": \"Máximo de 15 (quinze) dias úteis.\",\n    \"Pagamento\": \"Até 30 (trinta) dias após aceitação da Nota Fiscal Eletrônica/Fatura.\",\n    \"Apresentação do Relatório de Fechamento Mensal pela Contratada\": \"Em até 5 (cinco) dias úteis do encerramento do período de aferição.\",\n    \"Análise e Aprovação do Relatório de Fechamento pelo TJAM\": \"Até 15 (quinze) dias úteis do recebimento.\",\n    \"Reanálise de Relatório de Fechamento (em caso de divergência)\": \"5 (cinco) dias úteis.\",\n    \"Formação da Equipe Solicitada na Ordem de Serviço\": \"Até 30 (trinta) dias corridos.\",\n    \"Substituição de Profissional (por desempenho/habilidade)\": \"30 (trinta) dias corridos.\"\n  },\n  \"criterios_aceite\": [\n    \"Conformidade dos serviços com as especificações do Termo de Referência e da proposta.\",\n    \"Atividades associadas às Ordens de Serviço devem estar corretamente finalizadas para aceite definitivo, ou ter justificativa aceita para não execução.\",\n    \"Realização da verificação de qualidade dos produtos pela Contratada antes da entrega.\",\n    \"Verificação de qualidade dos produtos/serviços pela Contratante.\",\n    \"Rejeição parcial ou total do produto entregue se em desconformidade com o especificado no Termo de Referência ou na proposta.\",\n    \"Recusa de pagamento se os serviços não estiverem de acordo com as especificações apresentadas e aceitas.\",\n    \"Remuneração vinculada ao resultado e aos produtos entregues, não ao número de horas estimadas.\",\n    \"Emissão da nota fiscal/fatura somente após aprovação do relatório de fechamento mensal e contendo apenas os serviços efetivamente concluídos.\",\n    \"Atestado da nota fiscal/fatura após confrontação com os dados do relatório de fechamento.\",\n    \"Atendimento do Indicador de Ordem de Serviço Executada no Prazo (IOSEP) com nível aceitável (maior ou igual a 7), sob pena de advertência ou glosa.\",\n    \"Atendimento do Indicador de Sprint Satisfatória (ISS) com nível aceitável (100% dos objetivos ou no máximo uma tarefa de userstory não entregue), sob pena de glosa.\",\n    \"Demonstração da execução do serviço com disponibilização no ambiente institucional de homologação da Contratante e do código da versão final (deploy).\",\n    \"Formalização via e-mail (ou outro meio) do número de versão do deploy, caminho no repositório, descrição dos serviços realizados e atesto de testes mínimos funcionais.\",\n    \"Entrega de todos os artefatos conforme os termos contratuais.\",\n    \"Atendimento do sistema entregue às necessidades da área demandante (check list dos requisitos) e ao modelo de avaliação de interface do TJAM.\"\n  ],\n  \"valor_global\": \"A ser definido após pesquisa de mercado pela Divisão de Compras e Operações (DVCOP), com base na estimativa de 100.000 Unidades de Serviço Técnico (UST) anuais.\"\n}\n```"
+        }
+    },
+    "evidencia": {
+        "arquivo": "data/uploads/RELATÓRIO DE ENTREGA TÉCNICA 1.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": {
+            "erro_parse": true,
+            "resposta_bruta": "```json\n{\n  \"objeto\": \"Fornecimento e implementação de solução de software\",\n  \"entregaveis\": [\n    \"Solução de software\",\n    \"Código-fonte versionado\",\n    \"Relatório de Testes Automatizados\"\n  ],\n  \"prazos\": {},\n  \"criterios_aceite\": [\n    \"Testes automatizados unitários e de integração passarem com sucesso\",\n    \"Homologação e validação final da solução pelo cliente\",\n    \"Código-fonte versionado em repositório Git institucional\",\n    \"Commits registrados com identificação de branch e histórico completo\"\n  ],\n  \"valor_global\": \"Não especificado no texto fornecido\"\n}\n```"
+        }
+    },
+    "comparacao": {
+        "erro_parse": true,
+        "resposta_bruta": "```json\n{\n  \"objeto\": \"\",\n  \"entregaveis\": [],\n  \"prazos\": {},\n  \"criterios_aceite\": [],\n  \"valor_global\": \"\"\n}\n```"
+    }
+}

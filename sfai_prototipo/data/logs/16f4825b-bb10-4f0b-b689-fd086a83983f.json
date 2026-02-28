@@ -1,0 +1,32 @@
+{
+    "analise_id": "16f4825b-bb10-4f0b-b689-fd086a83983f",
+    "timestamp": "2026-02-28T02:21:17.750969+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": false,
+    "contrato": {
+        "arquivo": "data/uploads/contrato (2).pdf",
+        "analise_ia": "Erro na análise do contrato"
+    },
+    "evidencia": {
+        "arquivo": "data/uploads/RELATÓRIO DE ENTREGA TÉCNICA 1.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": "Erro na análise da evidência"
+    },
+    "comparacao": "Erro na comparação"
+}

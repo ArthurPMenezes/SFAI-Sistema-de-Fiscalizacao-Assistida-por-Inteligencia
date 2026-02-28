@@ -1,0 +1,35 @@
+{
+    "analise_id": "08ac4104-5a9b-4a4f-b53a-823f41b8cade",
+    "timestamp": "2026-02-28T02:24:56.408142+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": false,
+    "contrato": {
+        "arquivo": "data/uploads/contrato (2).pdf",
+        "analise_ia": {
+            "erro": true,
+            "mensagem": "Models.generate_content() got an unexpected keyword argument 'generation_config'"
+        }
+    },
+    "evidencia": {
+        "arquivo": "data/uploads/RELATÓRIO DE ENTREGA TÉCNICA 1.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": null
+    },
+    "comparacao": null
+}

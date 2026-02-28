@@ -1,0 +1,17 @@
+{
+    "analise_id": "63588938-1882-4248-a926-a8d6650fd940",
+    "timestamp": "2026-02-27T22:48:37.078263+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": false,
+    "contrato": {
+        "arquivo": "data/uploads/contrato (2).pdf",
+        "analise_ia": null
+    },
+    "evidencia": null,
+    "comparacao": null
+}

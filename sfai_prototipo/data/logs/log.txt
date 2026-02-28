@@ -2,3 +2,88 @@
 2026-02-27T16:15:42.791046+00:00 - Análise finalizada: 3cadd467-2734-4ace-bba4-8cca5f563ba6
 2026-02-27T16:52:51.455148+00:00 - Iniciando análise
 2026-02-27T16:52:51.456980+00:00 - Análise finalizada: 46b89221-b56f-4a37-b539-ee3c43826491
+2026-02-27T20:14:16.412642+00:00 - Iniciando análise
+2026-02-27T20:14:16.414904+00:00 - Análise finalizada: 207a49f3-3cd9-4871-9664-3c421f4d35ae
+2026-02-27T20:19:52.172212+00:00 - Iniciando análise
+2026-02-27T20:19:52.265084+00:00 - Análise finalizada: 5ab89ba7-7de3-441d-bb5c-91f5298969f1
+2026-02-27T21:17:49.887566+00:00 - Iniciando análise
+2026-02-27T21:17:50.974775+00:00 - Análise finalizada: fd86cc9c-f0b7-41a0-b690-18f9ba529431
+2026-02-27T21:18:04.889920+00:00 - Iniciando análise
+2026-02-27T21:19:03.195547+00:00 - IA executada com sucesso
+2026-02-27T21:19:03.197562+00:00 - Análise finalizada: 744996bf-c846-4ce4-b425-89b30f98c2ce
+2026-02-27T22:09:40.248631+00:00 - Iniciando análise
+2026-02-27T22:09:40.249373+00:00 - Análise finalizada: 2d114981-024f-4221-8f5f-f79da8304c2e
+2026-02-27T22:41:48.638481+00:00 - Iniciando análise híbrida
+2026-02-27T22:41:49.022139+00:00 - Análise finalizada: 7d52077a-dcff-4689-ba12-98bf707822d3
+2026-02-27T22:42:00.821643+00:00 - Iniciando análise híbrida
+2026-02-27T22:42:42.014945+00:00 - IA executada com sucesso
+2026-02-27T22:42:42.017283+00:00 - Análise finalizada: 2969d8cc-d374-46b0-af5e-aec4bfe24ebf
+2026-02-27T22:48:44.011467+00:00 - Iniciando análise modular
+2026-02-27T22:48:44.339637+00:00 - Análise finalizada
+2026-02-27T22:48:48.781176+00:00 - Iniciando análise modular
+2026-02-27T22:49:16.183926+00:00 - Análise finalizada
+2026-02-27T22:49:41.453001+00:00 - Iniciando análise modular
+2026-02-27T22:49:41.820515+00:00 - Análise finalizada
+2026-02-27T22:49:46.338768+00:00 - Iniciando análise modular
+2026-02-27T22:49:46.747444+00:00 - Análise finalizada
+2026-02-27T22:49:47.530212+00:00 - Iniciando análise modular
+2026-02-27T22:50:24.804118+00:00 - Análise finalizada
+2026-02-28T01:13:44.492923+00:00 - Iniciando análise modular
+2026-02-28T01:13:44.839036+00:00 - Análise finalizada
+2026-02-28T01:13:57.024315+00:00 - Iniciando análise modular
+2026-02-28T01:13:57.436134+00:00 - Análise finalizada
+2026-02-28T01:14:08.700923+00:00 - Iniciando análise modular
+2026-02-28T01:14:51.800834+00:00 - Análise finalizada
+2026-02-28T02:02:45.472647+00:00 - Iniciando análise modular
+2026-02-28T02:02:46.318551+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:02:46.883706+00:00 - Erro IA evidência: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:02:47.344575+00:00 - Erro IA comparação: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:02:47.347197+00:00 - Análise finalizada
+2026-02-28T02:03:03.089420+00:00 - Iniciando análise modular
+2026-02-28T02:03:03.955090+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:03:04.517241+00:00 - Erro IA evidência: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:03:04.994373+00:00 - Erro IA comparação: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:03:04.998185+00:00 - Análise finalizada
+2026-02-28T02:03:40.280004+00:00 - Iniciando análise modular
+2026-02-28T02:03:40.679428+00:00 - Análise finalizada
+2026-02-28T02:03:43.184508+00:00 - Iniciando análise modular
+2026-02-28T02:03:43.935872+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:03:44.385494+00:00 - Erro IA evidência: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:03:44.810993+00:00 - Erro IA comparação: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:03:44.814063+00:00 - Análise finalizada
+2026-02-28T02:18:00.957937+00:00 - Iniciando análise modular
+2026-02-28T02:18:01.357333+00:00 - Análise finalizada
+2026-02-28T02:18:06.869244+00:00 - Iniciando análise modular
+2026-02-28T02:18:07.579465+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:18:07.969697+00:00 - Erro IA evidência: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:18:08.339126+00:00 - Erro IA comparação: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:18:08.341898+00:00 - Análise finalizada
+2026-02-28T02:21:50.109356+00:00 - Iniciando análise modular
+2026-02-28T02:21:50.471676+00:00 - Análise finalizada
+2026-02-28T02:21:55.251482+00:00 - Iniciando análise modular
+2026-02-28T02:21:55.936660+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:21:56.371731+00:00 - Erro IA evidência: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:21:56.787533+00:00 - Erro IA comparação: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:21:56.790065+00:00 - Análise finalizada
+2026-02-28T02:22:21.413298+00:00 - Iniciando análise modular
+2026-02-28T02:22:22.171597+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:22:22.173384+00:00 - Análise finalizada
+2026-02-28T02:22:30.191252+00:00 - Iniciando análise modular
+2026-02-28T02:22:30.922404+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:22:31.366718+00:00 - Erro IA evidência: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:22:31.795554+00:00 - Erro IA comparação: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:22:31.797816+00:00 - Análise finalizada
+2026-02-28T02:25:08.084012+00:00 - Iniciando análise modular
+2026-02-28T02:25:08.482254+00:00 - Análise finalizada
+2026-02-28T02:25:13.284313+00:00 - Iniciando análise modular
+2026-02-28T02:25:14.000766+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:25:14.433979+00:00 - Erro IA evidência: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:25:14.808586+00:00 - Erro IA comparação: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:25:14.811023+00:00 - Análise finalizada
+2026-02-28T02:25:30.683594+00:00 - Iniciando análise modular
+2026-02-28T02:25:31.432868+00:00 - Erro IA contrato: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:25:31.929106+00:00 - Erro IA evidência: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:25:32.345822+00:00 - Erro IA comparação: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2026-02-28T02:25:32.363446+00:00 - Análise finalizada
+2026-02-28T02:28:59.724747+00:00 - Iniciando análise modular
+2026-02-28T02:30:06.209845+00:00 - Análise finalizada
