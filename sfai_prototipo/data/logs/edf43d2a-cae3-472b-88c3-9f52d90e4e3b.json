@@ -1,0 +1,33 @@
+{
+    "analise_id": "edf43d2a-cae3-472b-88c3-9f52d90e4e3b",
+    "timestamp": "2026-02-28T18:01:15.399695+00:00",
+    "regras_aplicadas": [],
+    "conformidades": [],
+    "nao_conformidades": [],
+    "score_final": 0,
+    "nivel_risco": "None",
+    "modo_execucao": "deterministico",
+    "ia_utilizada": false,
+    "contrato": {
+        "arquivo": "data/uploads/contrato (2).pdf",
+        "analise_ia": null
+    },
+    "evidencia": {
+        "arquivo": "data/uploads/teste_conforme_fiscal_ai.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score_deterministico": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": null
+    },
+    "comparacao": null,
+    "score_hibrido": null
+}

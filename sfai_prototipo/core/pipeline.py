@@ -18,7 +18,12 @@ def executar_pipeline(contrato_path=None, evidencia_path=None, usar_ia=False):
     resultado["contrato"] = None
     resultado["evidencia"] = None
     resultado["comparacao"] = None
+    resultado["score_hibrido"] = None
     resultado["ia_utilizada"] = False
+
+    contrato_estruturado = None
+    evidencia_estruturada = None
+    score_deterministico = None
 
     # =========================
     # 🔹 ANÁLISE DO CONTRATO
@@ -33,9 +38,9 @@ def executar_pipeline(contrato_path=None, evidencia_path=None, usar_ia=False):
 
         if usar_ia:
             try:
-                resposta = estruturar_contrato(texto_contrato)
+                contrato_estruturado = estruturar_contrato(texto_contrato)
 
-                resultado["contrato"]["analise_ia"] = resposta
+                resultado["contrato"]["analise_ia"] = contrato_estruturado
                 resultado["ia_utilizada"] = True
 
             except Exception as e:
@@ -54,26 +59,28 @@ def executar_pipeline(contrato_path=None, evidencia_path=None, usar_ia=False):
         regras = aplicar_regras(texto_evidencia)
         score, nivel = calcular_score(regras)
 
+        score_deterministico = score
+
         resultado["evidencia"] = {
             "arquivo": evidencia_path,
             "regras_aplicadas": regras.get("regras_aplicadas", []),
             "conformidades": regras.get("conformidades", []),
             "nao_conformidades": regras.get("nao_conformidades", []),
-            "score": score,
+            "score_deterministico": score,
             "nivel_risco": nivel,
             "analise_ia": None
         }
 
         if usar_ia:
             try:
-                resposta = estruturar_evidencia(texto_evidencia)
+                evidencia_estruturada = estruturar_evidencia(texto_evidencia)
 
-                resultado["evidencia"]["analise_ia"] = resposta
+                resultado["evidencia"]["analise_ia"] = evidencia_estruturada
                 resultado["ia_utilizada"] = True
 
             except Exception as e:
                 registrar_log(f"Erro IA evidência: {str(e)}")
-                resultado["contrato"]["analise_ia"] = {
+                resultado["evidencia"]["analise_ia"] = {
                     "erro": True,
                     "mensagem": str(e)
                 }
@@ -81,19 +88,38 @@ def executar_pipeline(contrato_path=None, evidencia_path=None, usar_ia=False):
     # =========================
     # 🔹 COMPARAÇÃO CONTRATO x EVIDÊNCIA
     # =========================
-    if contrato_path and evidencia_path and usar_ia:
+    if (
+        usar_ia
+        and contrato_estruturado
+        and evidencia_estruturada
+        and not contrato_estruturado.get("erro_parse")
+        and not evidencia_estruturada.get("erro_parse")
+    ):
         try:
-            resposta = comparar_contrato_evidencia(
-                resultado["contrato"]["analise_ia"],
-                resultado["evidencia"]["analise_ia"]
+            comparacao = comparar_contrato_evidencia(
+                contrato_estruturado,
+                evidencia_estruturada
             )
 
-            resultado["comparacao"] = resposta
-            resultado["ia_utilizada"] = True
+            resultado["comparacao"] = comparacao
+
+            # =========================
+            # 🔹 SCORE HÍBRIDO
+            # =========================
+
+            percentual_aderencia = comparacao.get("percentual_aderencia")
+
+            if percentual_aderencia is not None and score_deterministico is not None:
+                score_hibrido = round(
+                    (score_deterministico * 0.5) +
+                    (percentual_aderencia * 0.5)
+                )
+
+                resultado["score_hibrido"] = score_hibrido
 
         except Exception as e:
             registrar_log(f"Erro IA comparação: {str(e)}")
-            resultado["contrato"]["analise_ia"] = {
+            resultado["comparacao"] = {
                 "erro": True,
                 "mensagem": str(e)
             }
