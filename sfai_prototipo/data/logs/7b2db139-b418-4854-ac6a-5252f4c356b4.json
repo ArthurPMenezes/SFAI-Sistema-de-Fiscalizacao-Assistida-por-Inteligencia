@@ -1,0 +1,79 @@
+{
+    "analise_id": "7b2db139-b418-4854-ac6a-5252f4c356b4",
+    "timestamp": "2026-02-28T22:27:37.033877+00:00",
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": {
+            "erro": true,
+            "mensagem": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 18.395253224s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}"
+        }
+    },
+    "evidencia": {
+        "indicador_confiabilidade": {
+            "score_confiabilidade": 100,
+            "nivel_confiabilidade": "alta",
+            "criterios_avaliados": {
+                "tamanho": true,
+                "datas_formais": true,
+                "responsavel": true,
+                "referencia_contrato": true,
+                "linguagem_tecnica": true
+            }
+        },
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score_deterministico": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": {
+            "erro": true,
+            "mensagem": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 15.453704109s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}"
+        }
+    },
+    "comparacao": null,
+    "score_hibrido": null,
+    "modo_execucao": "hibrido",
+    "ia_utilizada": false,
+    "trilha_auditoria": [
+        {
+            "timestamp": "2026-02-28T22:27:37.037430+00:00",
+            "evento": "Pipeline iniciado"
+        },
+        {
+            "timestamp": "2026-02-28T22:27:37.562111+00:00",
+            "evento": "Texto do contrato extraído"
+        },
+        {
+            "timestamp": "2026-02-28T22:27:40.352237+00:00",
+            "evento": "Erro na análise IA do contrato"
+        },
+        {
+            "timestamp": "2026-02-28T22:27:40.671153+00:00",
+            "evento": "Texto da evidência extraído"
+        },
+        {
+            "timestamp": "2026-02-28T22:27:40.671276+00:00",
+            "evento": "Validação estrutural realizada (Score: 100%)"
+        },
+        {
+            "timestamp": "2026-02-28T22:27:40.671351+00:00",
+            "evento": "Score determinístico calculado: 50%"
+        },
+        {
+            "timestamp": "2026-02-28T22:27:43.219020+00:00",
+            "evento": "Erro na análise IA da evidência"
+        },
+        {
+            "timestamp": "2026-02-28T22:27:43.219054+00:00",
+            "evento": "Análise finalizada"
+        }
+    ]
+}

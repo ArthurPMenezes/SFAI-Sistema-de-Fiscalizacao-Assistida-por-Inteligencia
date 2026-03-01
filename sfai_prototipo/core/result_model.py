@@ -1,17 +1,24 @@
 import uuid
 from datetime import datetime, timezone
 
-now_utc = datetime.now(timezone.utc)
 
 def criar_resultado_base():
     return {
         "analise_id": str(uuid.uuid4()),
-        "timestamp": now_utc.isoformat(),
-        "regras_aplicadas": [],
-        "conformidades": [],
-        "nao_conformidades": [],
-        "score_final": 0,
-        "nivel_risco": "None",
-        "modo_execucao": "deterministico",
-        "ia_utilizada": False
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+
+        # Estrutura principal
+        "contrato": None,
+        "evidencia": None,
+        "comparacao": None,
+
+        # Score consolidado
+        "score_hibrido": None,
+
+        # Controle de execução
+        "modo_execucao": "hibrido",  # deterministico | ia | hibrido
+        "ia_utilizada": False,
+
+        # Governança
+        "trilha_auditoria": []
     }

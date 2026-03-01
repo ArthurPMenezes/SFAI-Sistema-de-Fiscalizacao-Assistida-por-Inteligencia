@@ -1,0 +1,65 @@
+{
+    "analise_id": "df7d9706-7fb7-4caf-9c11-a876a64f77b9",
+    "timestamp": "2026-03-01T14:29:18.213487+00:00",
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": null
+    },
+    "evidencia": {
+        "indicador_confiabilidade": {
+            "score_confiabilidade": 100,
+            "nivel_confiabilidade": "alta",
+            "criterios_avaliados": {
+                "tamanho": true,
+                "datas_formais": true,
+                "responsavel": true,
+                "referencia_contrato": true,
+                "linguagem_tecnica": true
+            }
+        },
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score_deterministico": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": null
+    },
+    "comparacao": null,
+    "score_hibrido": null,
+    "modo_execucao": "hibrido",
+    "ia_utilizada": false,
+    "trilha_auditoria": [
+        {
+            "timestamp": "2026-03-01T14:29:18.214232+00:00",
+            "evento": "Pipeline iniciado"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:18.387769+00:00",
+            "evento": "Texto do contrato extraído"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:18.504860+00:00",
+            "evento": "Texto da evidência extraído"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:18.504953+00:00",
+            "evento": "Validação estrutural realizada (Score: 100%)"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:18.505010+00:00",
+            "evento": "Score determinístico calculado: 50%"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:18.505013+00:00",
+            "evento": "Análise finalizada"
+        }
+    ]
+}

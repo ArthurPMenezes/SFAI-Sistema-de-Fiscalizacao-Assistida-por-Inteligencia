@@ -1,67 +1,36 @@
-import re
-
-
-def aplicar_regras(texto):
+def aplicar_regras(texto, regras_ativas):
     resultado = {
-        "regras_aplicadas": [
-            "verificacao_testes",
-            "verificacao_versionamento",
-            "verificacao_estrutura_tecnica",
-            "verificacao_tamanho_documento"
-        ],
+        "regras_aplicadas": regras_ativas,
         "conformidades": [],
         "nao_conformidades": []
     }
 
     texto_lower = texto.lower()
 
-    # =========================
-    # 🔹 REGRA 1 - TESTES
-    # =========================
-    if any(p in texto_lower for p in [
-        "teste automatizado",
-        "testes unitarios",
-        "test result",
-        "passed",
-        "failed"
-    ]):
-        resultado["conformidades"].append("Evidência real de testes encontrada")
-    else:
-        resultado["nao_conformidades"].append("Ausência de evidência real de testes")
+    for regra in regras_ativas:
 
-    # =========================
-    # 🔹 REGRA 2 - VERSIONAMENTO
-    # =========================
-    if re.search(r"commit\s+[a-f0-9]{6,40}", texto_lower):
-        resultado["conformidades"].append("Hash de commit identificado")
-    else:
-        resultado["nao_conformidades"].append("Nenhum hash de commit identificado")
+        if regra == "verificacao_testes":
+            if "teste automatizado" in texto_lower:
+                resultado["conformidades"].append("Presença de testes automatizados")
+            else:
+                resultado["nao_conformidades"].append("Ausência de testes automatizados")
 
-    # =========================
-    # 🔹 REGRA 3 - INDICADORES TÉCNICOS
-    # =========================
-    indicadores = 0
+        elif regra == "verificacao_versionamento":
+            if "versionamento" in texto_lower or "github" in texto_lower:
+                resultado["conformidades"].append("Evidência de versionamento")
+            else:
+                resultado["nao_conformidades"].append("Ausência de evidência de versionamento")
 
-    if re.search(r"\d+%", texto_lower):
-        indicadores += 1
+        elif regra == "verificacao_sla":
+            if "sla" in texto_lower:
+                resultado["conformidades"].append("SLA documentado")
+            else:
+                resultado["nao_conformidades"].append("Ausência de SLA")
 
-    if re.search(r"\d{2}/\d{2}/\d{4}", texto_lower):
-        indicadores += 1
-
-    if "pipeline" in texto_lower or "build" in texto_lower:
-        indicadores += 1
-
-    if indicadores >= 2:
-        resultado["conformidades"].append("Indicadores técnicos estruturais presentes")
-    else:
-        resultado["nao_conformidades"].append("Documento fraco em indicadores técnicos")
-
-    # =========================
-    # 🔹 REGRA 4 - TAMANHO
-    # =========================
-    if len(texto) > 800:
-        resultado["conformidades"].append("Documento com volume compatível")
-    else:
-        resultado["nao_conformidades"].append("Documento muito curto para evidência formal")
+        elif regra == "verificacao_tempo_resposta":
+            if "tempo de resposta" in texto_lower:
+                resultado["conformidades"].append("Tempo de resposta documentado")
+            else:
+                resultado["nao_conformidades"].append("Tempo de resposta não informado")
 
     return resultado

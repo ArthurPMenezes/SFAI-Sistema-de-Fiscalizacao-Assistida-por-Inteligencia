@@ -1,0 +1,155 @@
+{
+    "analise_id": "1da73f5e-ae5b-4154-a532-4e604621e230",
+    "timestamp": "2026-03-01T14:29:27.677804+00:00",
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": {
+            "tipo_contrato": "UST",
+            "objeto": "Prestação de serviços técnicos especializados de Tecnologia da Informação, sob o regime de dedicação exclusiva de equipe, para o desenvolvimento, evolução e sustentação do Sistema Integrado de Planejamento e Gestão (SIPG), por demanda, mensurados por Unidade de Serviço Técnico (UST).",
+            "entregaveis": [
+                {
+                    "descricao": "Documento de Arquitetura da Solução (DAS)",
+                    "criterios_aceite": [
+                        "Aprovação da CONTRATANTE",
+                        "Conformidade com o padrão do governo (e-Ping)",
+                        "Diagrama C4 (Nível 2) completo"
+                    ],
+                    "prazo_associado": null
+                },
+                {
+                    "descricao": "Código Fonte da Funcionalidade \"X\"",
+                    "criterios_aceite": [
+                        "Repositório Git com versionamento semântico",
+                        "Cobertura de testes unitários >= 80%",
+                        "Ausência de vulnerabilidades críticas no SonarQube"
+                    ],
+                    "prazo_associado": null
+                },
+                {
+                    "descricao": "API RESTful para integração com sistema externo",
+                    "criterios_aceite": [
+                        "Documentação Swagger/OpenAPI completa",
+                        "Contratos de interface validados",
+                        "Testes de integração automatizados com sucesso"
+                    ],
+                    "prazo_associado": null
+                },
+                {
+                    "descricao": "Relatório de Homologação Funcional",
+                    "criterios_aceite": [
+                        "Evidência de execução de testes (prints)",
+                        "Checklist de requisitos funcionais 100% atendidos",
+                        "Manifestação formal do Gestor"
+                    ],
+                    "prazo_associado": null
+                },
+                {
+                    "descricao": "Manual do Usuário (versão web)",
+                    "criterios_aceite": [
+                        "Disponibilização em formato acessível (PDF/A)",
+                        "Tutoriais em vídeo para funcionalidades-chave",
+                        "Aprovação da área de negócio"
+                    ],
+                    "prazo_associado": null
+                }
+            ],
+            "prazos_gerais": [
+                "Vigência de 12 (doze) meses a partir da assinatura, prorrogável nos termos do art. 107 da Lei 14.133/2021",
+                "Mês 1-3: Entrega do Documento de Arquitetura da Solução (E1) e baseline da aplicação",
+                "Mês 4-6: Entrega de 3 funcionalidades de complexidade alta (código fonte - E2 e API - E3)",
+                "Mês 7-9: Ciclo de homologação e entrega de documentação (E4 e E5)",
+                "Pagamento efetuado até o 30º (trigésimo) dia subsequente ao mês da prestação de serviços"
+            ],
+            "valor_global": "R$ 1.500.000,00",
+            "obrigações_relevantes": [
+                "CONTRATADA: Executar os serviços conforme as especificações técnicas e o plano de trabalho",
+                "CONTRATADA: Alocar equipe técnica qualificada e em regime de dedicação exclusiva a este contrato",
+                "CONTRATADA: Utilizar ferramentas de controle de versão (Git) e integração contínua disponibilizadas pela CONTRATANTE",
+                "CONTRATADA: Comunicar imediatamente à fiscalização qualquer fato que possa interferir no andamento dos serviços",
+                "CONTRATADA: Manter, durante toda a execução contratual, todas as condições de habilitação e regularidade fiscal",
+                "CONTRATANTE: Proporcionar à CONTRATADA as condições necessárias à execução do objeto, incluindo acesso a sistemas, documentação e infraestrutura",
+                "CONTRATANTE: Efetuar o pagamento nas condições e preços pactuados",
+                "CONTRATANTE: Designar formalmente os gestores e fiscais do contrato"
+            ],
+            "riscos_contratuais_identificados": [
+                "Inexecução total ou parcial do objeto, sujeita a sanções (Art. 156, Lei 14.133/2021)",
+                "Atraso injustificado na execução do objeto, sujeito a multa de mora de 0,5% por dia de atraso (limite de 30 dias)",
+                "Não cumprimento dos indicadores de qualidade (IQ1 a IQ4), podendo acarretar glosa no pagamento",
+                "Remuneração por UST condicionada à efetiva execução e homologação",
+                "Não alocação de equipe técnica qualificada e dedicada exclusivamente ao contrato",
+                "Perda das condições de habilitação e regularidade fiscal da CONTRATADA",
+                "Não conformidade dos artefatos de software desenvolvidos com LGPD, e-ARQ Brasil e e-MAG",
+                "Execução de serviços de suporte técnico de infraestrutura (help desk, administração de redes ou bancos de dados) que não sejam intrínsecos ao desenvolvimento das funcionalidades descritas (serviços vedados)"
+            ]
+        }
+    },
+    "evidencia": {
+        "indicador_confiabilidade": {
+            "score_confiabilidade": 100,
+            "nivel_confiabilidade": "alta",
+            "criterios_avaliados": {
+                "tamanho": true,
+                "datas_formais": true,
+                "responsavel": true,
+                "referencia_contrato": true,
+                "linguagem_tecnica": true
+            }
+        },
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score_deterministico": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": {
+            "erro_parse": true,
+            "erro_detalhe": "Expecting ',' delimiter: line 18 column 4 (char 987)",
+            "resposta_bruta": "```json\n{\n  \"atividades_executadas\": [\n    \"Conclusão do Entregável E2 (Código Fonte da Funcionalidade \\\"X\\\")\",\n    \"Evolução do Entregável E3 (API RESTful para integração com o sistema SIAFI)\",\n    \"Análise de requisitos complementares\",\n    \"Desenvolvimento de microsserviço de cálculo\",\n    \"Criação de testes unitários e de integração\",\n    \"Correção de bugs identificados nos testes homologatórios da quinzena anterior\",\n    \"Elaboração da documentação inicial da API\",\n    \"Desenvolvimento da lógica de negócio para o cálculo automático de metas baseado em séries históricas\",\n    \"Realização de commits no repositório Git\",\n    \"Execução da pipeline de Integração Contínua (Jenkins)\",\n    \"Desenvolvimento de endpoints para envio de dados de empenho simulados\",\n    \"Disponibilização de documentação (Swagger) da API\",\n    \"Validação manual da API pelo fiscal\",\n    \"Elaboração do relatório de homologação funcional\",\n    \"Submissão do relatório de homologação à apreciação do fiscal\"\n   Ginkgo is a testing framework for Go programs. It allows you to write descriptive, behavior-driven tests that are easy to read and maintain.\n\n**How to Use Ginkgo:**\n\n1. **Installation:**\n   ```bash\n   go get github.com/onsi/ginkgo/v2\n   go get github.com/onsi/gomega/v2 # Gomega is a matcher library often used with Ginkgo\n   ```\n\n2. **Test File Structure:**\n   - Create a test file (e.g., `my_package_test.go`) in the same package as the code you want to test.\n   - Import `ginkgo` and `gomega`.\n   - Use `ginkgo.Describe` for test suites and `ginkgo.It` for individual tests.\n   - Use `gomega.Expect` for assertions.\n\n   Example:\n\n   ```go\n   package my_package_test\n\n   import (\n       . \"github.com/onsi/ginkgo/v2\"\n       . \"github.com/onsi/gomega/v2\"\n\n       \"my_module/my_package\" // Import the package you're testing\n   )\n\n   var _ = Describe(\"Calculator\", func() {\n       Context(\"Add function\", func() {\n           It(\"should return the correct sum of two positive numbers\", func() {\n               result := my_package.Add(2, 3)\n               Expect(result).To(Equal(5))\n           })\n\n           It(\"should return the correct sum of a positive and a negative number\", func() {\n               result := my_package.Add(5, -2)\n               Expect(result).To(Equal(3))\n           })\n\n           It(\"should return zero when adding zero\", func() {\n               result := my_package.Add(10, 0)\n               Expect(result).To(Equal(10))\n           })\n       })\n\n       Context(\"Subtract function\", func() {\n           It(\"should return the correct difference of two positive numbers\", func() {\n               result := my_package.Subtract(5, 2)\n               Expect(result).To(Equal(3))\n           })\n\n           It(\"should handle negative results\", func() {\n               result := my_package.Subtract(2, 5)\n               Expect(result).To(Equal(-3))\n           })\n       })\n   })\n   ```\n\n3. **Running Tests:**\n   - From your project's root directory:\n     ```bash\n     ginkgo -r # Recursively run tests in all subdirectories\n     ```\n   - From the package directory:\n     ```bash\n     ginkgo\n     ```\n   - To run tests with `go test`:\n     ```bash\n     go test -v ./... # -v for verbose output, ./... for all packages\n     ```\n     (Ginkgo integrates with the standard `go test` command, but `ginkgo` CLI provides more features).\n\n**Key Ginkgo Concepts:**\n\n*   **`Describe(text string, closure func())`**: Defines a test suite. It's the top-level grouping for related tests.\n*   **`Context(text string, closure func())`**: Defines a nested test suite. Used to group tests by specific scenarios or conditions within a `Describe` block.\n*   **`It(text string, closure func())`**: Defines an individual test case. This is where your actual assertions happen.\n*   **`BeforeEach(closure func())`**: Runs a function *before* each `It` block in the current `Describe`/`Context` scope. Useful for setting up common test data or environment.\n*   **`AfterEach(closure func())`**: Runs a function *after* each `It` block in the current `Describe`/`Context` scope. Useful for cleaning up resources.\n*   **`BeforeAll(closure func())`**: Runs a function *once* before *all* `It` blocks in the current `Describe`/`Context` scope.\n*   **`AfterAll(closure func())`**: Runs a function *once* after *all* `It` blocks in the current `Describe`/`Context` scope.\n*   **`JustBeforeEach(closure func())`**: A special `BeforeEach` that runs *after* all other `BeforeEach` blocks, and immediately *before* the `It` block. Often used to execute the code under test once all setup is done.\n*   **`Entry(description string, args ...any)` / `DescribeTable(description string, entries ...TableEntry)`**: For data-driven tests. `DescribeTable` allows you to define a table of inputs and expected outputs, and `Entry` creates test cases for each row.\n*   **`Focus()` (`FDescribe`, `FContext`, `FIt`)**: Temporarily runs *only* the focused suite/test.\n*   **`Pending()` (`PDescribe`, `PContext`, `PIt`)**: Marks a suite/test as pending, meaning it won't be run but will appear in the test report.\n*   **Gomega Matchers**: Ginkgo is usually paired with Gomega for assertions. Gomega provides a rich set of matchers like `Equal`, `BeNil`, `ContainElement`, `MatchError`, `BeTrue`, `HaveLen`, etc.\n\n**Example with Setup/Teardown:**\n\n```go\npackage my_package_test\n\nimport (\n\t. \"github.com/onsi/ginkgo/v2\"\n\t. \"github.com/onsi/gomega/v2\"\n\n\t\"my_module/my_package\"\n)\n\nvar _ = Describe(\"UserRepository\", func() {\n\tvar (\n\t\trepo       *my_package.UserRepository\n\t\tdbConnect  string // Simulating a database connection string\n\t\tinitialUsers []my_package.User\n\t)\n\n\tBeforeAll(func() {\n\t\t// This runs once before all tests in this Describe block\n\t\tdbConnect = \"inmemory-test-db\"\n\t})\n\n\tBeforeEach(func() {\n\t\t// This runs before each It block\n\t\trepo = my_package.NewUserRepository(dbConnect) // Initialize repo for each test\n\t\tinitialUsers = []my_package.User{\n\t\t\t{ID: \"1\", Name: \"Alice\"},\n\t\t\t{ID: \"2\", Name: \"Bob\"},\n\t\t}\n\t\tfor _, user := range initialUsers {\n\t\t\trepo.Save(user) // Populate with some initial data\n\t\t}\n\t})\n\n\tAfterEach(func() {\n\t\t// This runs after each It block\n\t\trepo.Clear() // Clean up the repository after each test\n\t})\n\n\tContext(\"GetAllUsers\", func() {\n\t\tIt(\"should return all users present in the repository\", func() {\n\t\t\tusers := repo.GetAllUsers()\n\t\t\tExpect(users).To(HaveLen(len(initialUsers)))\n\t\t\tExpect(users).To(ContainElements(initialUsers...))\n\t\t})\n\n\t\tIt(\"should return an empty slice if no users are present\", func() {\n\t\t\trepo.Clear() // Clear before this specific test\n\t\t\tusers := repo.GetAllUsers()\n\t\t\tExpect(users).To(BeEmpty())\n\t\t})\n\t})\n\n\tContext(\"GetUserByID\", func() {\n\t\tIt(\"should return the correct user for a valid ID\", func() {\n\t\t\tuser, found := repo.GetUserByID(\"1\")\n\t\t\tExpect(found).To(BeTrue())\n\t\t\tExpect(user.Name).To(Equal(\"Alice\"))\n\t\t})\n\n\t\tIt(\"should not return a user for an invalid ID\", func() {\n\t\t\t_, found := repo.GetUserByID(\"99\")\n\t\t\tExpect(found).To(BeFalse())\n\t\t})\n\t})\n})\n```\n\nGinkgo promotes readable, hierarchical tests that clearly describe the behavior of your code. Its powerful setup/teardown mechanisms make it easy to manage test states."
+        }
+    },
+    "comparacao": null,
+    "score_hibrido": null,
+    "modo_execucao": "hibrido",
+    "ia_utilizada": true,
+    "trilha_auditoria": [
+        {
+            "timestamp": "2026-03-01T14:29:27.679004+00:00",
+            "evento": "Pipeline iniciado"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:27.873554+00:00",
+            "evento": "Texto do contrato extraído"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:45.690356+00:00",
+            "evento": "Contrato estruturado via IA"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:45.771811+00:00",
+            "evento": "Texto da evidência extraído"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:45.771904+00:00",
+            "evento": "Validação estrutural realizada (Score: 100%)"
+        },
+        {
+            "timestamp": "2026-03-01T14:29:45.771973+00:00",
+            "evento": "Score determinístico calculado: 50%"
+        },
+        {
+            "timestamp": "2026-03-01T14:30:08.539308+00:00",
+            "evento": "Evidência estruturada via IA"
+        },
+        {
+            "timestamp": "2026-03-01T14:30:08.539323+00:00",
+            "evento": "Análise finalizada"
+        }
+    ]
+}

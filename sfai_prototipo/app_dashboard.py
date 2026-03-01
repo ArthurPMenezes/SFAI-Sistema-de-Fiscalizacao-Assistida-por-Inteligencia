@@ -1,8 +1,38 @@
 import streamlit as st
 import json
-import pandas as pd
-from core.pipeline import executar_pipeline
 import plotly.graph_objects as go
+from core.pipeline import executar_pipeline
+
+def renderizar_bloco_ia(titulo, objeto):
+    st.markdown(f"### {titulo}")
+
+    if not objeto:
+        st.info("Não analisado.")
+        return
+
+    # Caso venha estrutura {"erro": True, "mensagem": "..."}
+    if isinstance(objeto, dict) and objeto.get("erro"):
+        st.error(f"Erro na análise: {objeto.get('mensagem', 'Falha desconhecida')}")
+        return
+
+    # Caso venha erro de parse da IA
+    if isinstance(objeto, dict) and objeto.get("erro_parse"):
+        st.error("Erro ao interpretar resposta da IA.")
+        st.code(objeto.get("resposta_bruta", ""))
+        return
+
+    # Caso seja JSON válido
+    if isinstance(objeto, dict):
+        st.json(objeto)
+        return
+
+    # Caso seja texto puro
+    if isinstance(objeto, str):
+        st.write(objeto)
+        return
+
+    # Qualquer coisa inesperada
+    st.warning("Formato inesperado retornado pela IA.")
 
 st.set_page_config(
     page_title="SFAI – Sistema de Fiscalização Assistida por IA",
@@ -13,7 +43,7 @@ st.title("SFAI – Sistema de Fiscalização Assistida por IA")
 st.markdown("---")
 
 # =========================
-# Upload de Arquivos
+# Upload
 # =========================
 
 col1, col2 = st.columns(2)
@@ -23,6 +53,11 @@ with col1:
 
 with col2:
     evidencia_file = st.file_uploader("Upload da Evidência (PDF)", type=["pdf"])
+
+tipo_contrato = st.selectbox(
+    "Tipo de Contrato",
+    ["desenvolvimento_software", "suporte_tecnico"]
+)
 
 usar_ia = st.checkbox("Ativar análise com IA", value=True)
 
@@ -43,100 +78,106 @@ if st.button("Executar Análise"):
         resultado = executar_pipeline(
             contrato_path="contrato_temp.pdf",
             evidencia_path="evidencia_temp.pdf",
+            tipo_contrato=tipo_contrato,
             usar_ia=usar_ia
         )
 
         st.success("Análise concluída com sucesso.")
-
         st.markdown("---")
 
         # =========================
-        # Indicadores Gerenciais
+        # ABAS
         # =========================
 
-        st.subheader("Indicadores Gerenciais")
-
-        score_det = resultado["evidencia"]["score_deterministico"]
-        score_hibrido = resultado.get("score_hibrido")
-        nivel = resultado["evidencia"]["nivel_risco"]
-
-        k1, k2, k3, k4 = st.columns(4)
-
-        k1.metric("Score Determinístico", f"{score_det}%")
-
-        k2.metric(
-            "Score Híbrido",
-            f"{score_hibrido}%" if score_hibrido is not None else "N/A"
-        )
-
-        k3.metric("Nível de Risco", nivel.capitalize())
-
-        k4.metric(
-            "IA Utilizada",
-            "Ativa" if resultado["ia_utilizada"] else "Inativa"
-        )
-
-        # Barra visual
-        st.write("### Grau Geral de Conformidade")
-        st.progress(score_det / 100)
+        aba1, aba2, aba3 = st.tabs([
+            " Dashboard Gerencial",
+            " Relatório Técnico",
+            " Trilha de Auditoria"
+        ])
 
         # =========================
-        # Alerta de Risco
+        # DASHBOARD
         # =========================
 
-        if nivel == "alto":
-            st.error("⚠ Alto risco de não conformidade contratual.")
-        elif nivel == "moderado":
-            st.warning("⚠ Risco moderado identificado.")
-        else:
-            st.success("✔ Baixo risco de não conformidade.")
+        with aba1:
 
-        st.markdown("---")
+            score_det = resultado["evidencia"]["score_deterministico"]
+            score_hibrido = resultado.get("score_hibrido")
+            nivel = resultado["evidencia"]["nivel_risco"]
+
+            k1, k2, k3, k4 = st.columns(4)
+
+            k1.metric("Score Determinístico", f"{score_det}%")
+            k2.metric(
+                "Score Híbrido",
+                f"{score_hibrido}%" if score_hibrido else "N/A"
+            )
+            k3.metric("Nível de Risco", nivel.capitalize())
+            k4.metric(
+                "IA Utilizada",
+                "Sim" if resultado["ia_utilizada"] else "Não"
+            )
+
+            valor_gauge = score_hibrido if score_hibrido else score_det
+
+            fig = go.Figure(go.Indicator(
+                mode="gauge+number",
+                value=valor_gauge,
+                title={'text': "Índice Geral de Conformidade"},
+                gauge={
+                    'axis': {'range': [0, 100]},
+                    'steps': [
+                        {'range': [0, 49], 'color': "#ff4d4d"},
+                        {'range': [50, 79], 'color': "#ffcc00"},
+                        {'range': [80, 100], 'color': "#4CAF50"}
+                    ],
+                }
+            ))
+
+            fig.update_layout(height=350)
+            st.plotly_chart(fig, width='stretch')
 
         # =========================
-        # Gauge de Conformidade
+        # 📑 ABA 2 – RELATÓRIO TÉCNICO
         # =========================
 
-        st.subheader("Índice Geral de Conformidade")
+        with aba2:
 
-        valor_gauge = score_hibrido if score_hibrido is not None else score_det
+            with st.expander("Regras Aplicadas"):
+                st.json(resultado["evidencia"]["regras_aplicadas"])
 
-        fig = go.Figure(go.Indicator(
-            mode="gauge+number",
-            value=valor_gauge,
-            title={'text': "Score (%)"},
-            gauge={
-                'axis': {'range': [0, 100]},
-                'bar': {'thickness': 0.3},
-                'steps': [
-                    {'range': [0, 49], 'color': "#ff4d4d"},
-                    {'range': [50, 79], 'color': "#ffcc00"},
-                    {'range': [80, 100], 'color': "#4CAF50"}
-                ],
-            }
-        ))
+            with st.expander("Análise IA - Contrato"):
+                renderizar_bloco_ia(
+                    "Análise Estruturada do Contrato (IA)",
+                    resultado.get("contrato", {}).get("analise_ia")
+                )
 
-        fig.update_layout(height=350)
+            with st.expander("Análise IA - Evidência"):
+                renderizar_bloco_ia(
+                    "Análise Estruturada da Evidência (IA)",
+                    resultado.get("evidencia", {}).get("analise_ia")
+                )
 
-        st.plotly_chart(fig, width='stretch')
+            with st.expander("Comparação Contrato x Evidência"):
+                renderizar_bloco_ia(
+                    "Parecer Técnico Comparativo",
+                    resultado.get("comparacao")
+                )
+
 
         # =========================
-        # Detalhamento Técnico
+        # TRILHA DE AUDITORIA
         # =========================
 
-        st.subheader("Detalhamento Técnico")
+        with aba3:
 
-        with st.expander("Regras Aplicadas"):
-            st.write(resultado["evidencia"]["regras_aplicadas"])
+            trilha = resultado.get("trilha_auditoria", [])
 
-        with st.expander("Análise IA - Contrato"):
-            st.json(resultado["contrato"]["analise_ia"])
-
-        with st.expander("Análise IA - Evidência"):
-            st.json(resultado["evidencia"]["analise_ia"])
-
-        with st.expander("Comparação Contrato x Evidência"):
-            st.json(resultado["comparacao"])
+            if trilha:
+                for evento in trilha:
+                    st.markdown(f"**[{evento['timestamp']}]** – {evento['evento']}")
+            else:
+                st.info("Nenhum evento registrado.")
 
     else:
         st.warning("Envie contrato e evidência para iniciar a análise.")

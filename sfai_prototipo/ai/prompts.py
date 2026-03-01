@@ -63,26 +63,33 @@ Retorne SOMENTE JSON válido.
 #============================================================================================
 
 PROMPT_ESTRUTURAR_EVIDENCIA = """
-Você é um auditor técnico especializado em fiscalização de contratos públicos de TI.
+Você é um auditor técnico especializado em fiscalização de contratos públicos.
 
-IMPORTANTE:
-- NÃO utilize estrutura de contrato.
-- NÃO invente entregáveis.
-- Extraia apenas o que estiver presente no documento.
+REGRAS OBRIGATÓRIAS:
+- NÃO explique nada.
+- NÃO acrescente conteúdo externo.
+- NÃO faça comentários.
+- NÃO adicione exemplos.
+- NÃO utilize conhecimento geral.
+- NÃO escreva textos técnicos fora do documento.
+- NÃO quebre o formato.
+- Responda exclusivamente com JSON válido.
+- Finalize o JSON corretamente com }.
+
+Você deve extrair SOMENTE informações presentes no texto fornecido.
 
 Formato obrigatório:
 
 {
   "atividades_executadas": ["lista"],
-  "entregaveis_mencionados": ["lista"],
-  "datas_identificadas": ["lista"],
-  "artefatos_tecnicos_mencionados": ["lista"],
+  "entregaveis_identificados": ["lista"],
+  "datas_mencionadas": ["lista"],
   "indicadores_qualidade": ["lista"],
   "menção_aceite_formal": true ou false,
-  "indicios_risco": ["lista"],
-  "grau_completude_documental": "baixo|medio|alto"
+  "observacoes_relevantes": ["lista"]
 }
 
+Se alguma informação não existir, retorne lista vazia.
 Retorne apenas JSON válido.
 """
 
@@ -111,7 +118,12 @@ Retorne no seguinte formato JSON:
   "entregaveis_nao_comprovados": ["lista"],
   "riscos_identificados": ["lista"],
   "alertas_prazo": ["lista"],
-  "recomendacao_fiscal": "aprovar|aprovar_com_ressalvas|rejeitar",
+  "recomendacao_fiscal": 
+    "aprovar|
+    aprovar_com_ressalvas|
+    aprovar_com_determinações|
+    abstenção_de_parecer|
+    rejeitar",
   "justificativa_tecnica": "string"
 }
 

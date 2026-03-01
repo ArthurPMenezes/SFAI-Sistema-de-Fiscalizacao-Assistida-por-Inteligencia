@@ -1,0 +1,248 @@
+{
+    "analise_id": "ead2d3a3-5464-481a-9814-7abb8627c547",
+    "timestamp": "2026-03-01T14:17:20.520553+00:00",
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": {
+            "tipo_contrato": "UST",
+            "objeto": "Prestação de serviços técnicos especializados de Tecnologia da Informação, sob o regime de dedicação exclusiva de equipe, para o desenvolvimento, evolução e sustentação do Sistema Integrado de Planejamento e Gestão (SIPG), por demanda.",
+            "entregaveis": [
+                {
+                    "descricao": "Documento de Arquitetura da Solução (DAS)",
+                    "criterios_aceite": [
+                        "Aprovação da CONTRATANTE",
+                        "Conformidade com o padrão do governo (e-Ping)",
+                        "Diagrama C4 (Nível 2) completo"
+                    ],
+                    "prazo_associado": null
+                },
+                {
+                    "descricao": "Código Fonte da Funcionalidade \"X\"",
+                    "criterios_aceite": [
+                        "Repositório Git com versionamento semântico",
+                        "Cobertura de testes unitários >= 80%",
+                        "Ausência de vulnerabilidades críticas no SonarQube"
+                    ],
+                    "prazo_associado": null
+                },
+                {
+                    "descricao": "API RESTful para integração com sistema externo",
+                    "criterios_aceite": [
+                        "Documentação Swagger/OpenAPI completa",
+                        "Contratos de interface validados",
+                        "Testes de integração automatizados com sucesso"
+                    ],
+                    "prazo_associado": null
+                },
+                {
+                    "descricao": "Relatório de Homologação Funcional",
+                    "criterios_aceite": [
+                        "Evidência de execução de testes (prints)",
+                        "Checklist de requisitos funcionais 100% atendidos",
+                        "Manifestação formal do Gestor"
+                    ],
+                    "prazo_associado": null
+                },
+                {
+                    "descricao": "Manual do Usuário (versão web)",
+                    "criterios_aceite": [
+                        "Disponibilização em formato acessível (PDF/A)",
+                        "Tutoriais em vídeo para funcionalidades-chave",
+                        "Aprovação da área de negócio"
+                    ],
+                    "prazo_associado": null
+                }
+            ],
+            "prazos_gerais": [
+                "Vigência de 12 meses a partir da data de assinatura",
+                "Metas globais de entrega: Mês 1-3 (E1 e baseline da aplicação)",
+                "Metas globais de entrega: Mês 4-6 (3 funcionalidades de complexidade alta - E2 e E3)",
+                "Metas globais de entrega: Mês 7-9 (Ciclo de homologação e documentação - E4 e E5)"
+            ],
+            "valor_global": "R$ 1.500.000,00",
+            "obrigações_relevantes": [
+                "CONTRATADA: Executar os serviços conforme as especificações técnicas e o plano de trabalho.",
+                "CONTRATADA: Alocar equipe técnica qualificada e em regime de dedicação exclusiva.",
+                "CONTRATADA: Utilizar ferramentas de controle de versão (Git) e integração contínua disponibilizadas pela CONTRATANTE.",
+                "CONTRATADA: Comunicar imediatamente à fiscalização qualquer fato que possa interferir no andamento dos serviços.",
+                "CONTRATADA: Manter, durante toda a execução contratual, todas as condições de habilitação e regularidade fiscal.",
+                "CONTRATANTE: Proporcionar as condições necessárias à execução do objeto, incluindo acesso a sistemas, documentação e infraestrutura.",
+                "CONTRATANTE: Efetuar o pagamento nas condições e preços pactuados.",
+                "CONTRATANTE: Designar formalmente os gestores e fiscais do contrato."
+            ],
+            "riscos_contratuais_identificados": [
+                "Não cumprimento do objeto (desenvolvimento, evolução e sustentação do SIPG).",
+                "Alocação de equipe técnica não qualificada ou não dedicada exclusivamente ao contrato.",
+                "Não utilização das ferramentas de controle de versão (Git) e integração contínua disponibilizadas.",
+                "Atraso injustificado na execução do objeto ou na entrega de entregáveis.",
+                "Inexecução total ou parcial do objeto.",
+                "Não cumprimento dos Indicadores de Nível de Serviço (IQ1 - Pontualidade, IQ2 - Qualidade de Código, IQ3 - Correções, IQ4 - Satisfação do Fiscal Técnico).",
+                "Entrega de artefatos de software não conformes com LGPD, e-ARQ Brasil e e-MAG.",
+                "Execução de serviços vedados (suporte técnico de infraestrutura, administração de redes ou bancos de dados, salvo se intrínsecos ao desenvolvimento).",
+                "Não manutenção das condições de habilitação e regularidade fiscal da Contratada.",
+                "Falha da CONTRATANTE em proporcionar condições necessárias à execução do objeto (acesso, documentação, infraestrutura).",
+                "Atraso ou não realização dos pagamentos pela CONTRATANTE."
+            ]
+        }
+    },
+    "evidencia": {
+        "indicador_confiabilidade": {
+            "score_confiabilidade": 100,
+            "nivel_confiabilidade": "alta",
+            "criterios_avaliados": {
+                "tamanho": true,
+                "datas_formais": true,
+                "responsavel": true,
+                "referencia_contrato": true,
+                "linguagem_tecnica": true
+            }
+        },
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score_deterministico": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": {
+            "atividades_executadas": [
+                "conclusão do Entregável E2",
+                "evolução do Entregável E3",
+                "Análise de requisitos complementares",
+                "Desenvolvimento de microsserviço de cálculo",
+                "Criação de testes unitários e de integração",
+                "Correção de bugs identificados nos testes homologatórios da quinzena anterior",
+                "Elaboração da documentação inicial da API",
+                "Desenvolvimento da lógica de negócio para o cálculo automático de metas baseado em séries históricas",
+                "Desenvolvimento dos endpoints para envio de dados de empenho simulados",
+                "Elaboração do relatório consolidando os testes da funcionalidade 'Cálculo de Metas'"
+            ],
+            "entregaveis_mencionados": [
+                "Entregável E2 (Código Fonte da Funcionalidade 'X')",
+                "Entregável E3 (API RESTful para integração com o sistema SIAFI)",
+                "Entregável E4: Relatório de Homologação Funcional"
+            ],
+            "datas_identificadas": [
+                "Maio de 2024",
+                "01/05/2024",
+                "31/05/2024",
+                "03/06/2024",
+                "15/05/2024",
+                "20/05/2024",
+                "05/06/2024"
+            ],
+            "artefatos_tecnicos_mencionados": [
+                "Código Fonte da Funcionalidade 'X' (Cálculo Automático de Metas)",
+                "API RESTful (Integração SIAFI)",
+                "documentação inicial da API",
+                "ferramenta JIRA (Relatório Anexo - JIRA_MAIO_2024.xls)",
+                "repositório oficial do CONTRATANTE (git@git.gov:planejamento/sipg/plano-modulo.git)",
+                "commit a1b2c3d4e5f6...",
+                "commit f6e5d4c3b2a1...",
+                "pipeline de Integração Contínua (Jenkins)",
+                "relatório de testes (Jenkins)",
+                "Documentação (Swagger)",
+                "interface do Swagger (UI)",
+                "Relatório de Homologação Funcional (RH_2024_010.pdf)",
+                "Checklist dos requisitos",
+                "Prints de tela das execuções de teste"
+            ],
+            "indicadores_qualidade": [
+                "72% de cobertura (para testes de unidade do E2)",
+                "142 testes executados (Jenkins)",
+                "140 com sucesso (Jenkins)",
+                "2 falhas (Jenkins)",
+                "9 de 10 itens marcados como 'OK' (Checklist de requisitos)",
+                "item 'RF-07: Cálculo para anos bissextos' marcado como 'PENDENTE'",
+                "testes de integração automatizados apresentaram sucesso (API E3)"
+            ],
+            "menção_aceite_formal": false,
+            "indicios_risco": [
+                "2 falhas em testes da pipeline de Integração Contínua (Jenkins)",
+                "lacuna na validação de dados obrigatórios (campo 'Número do Processo' aceitava valores nulos na API E3)",
+                "item 'RF-07: Cálculo para anos bissextos' está marcado como 'PENDENTE' no checklist de requisitos do E4",
+                "cobertura de testes do código entregue (72%) ficou abaixo da meta de 80% estabelecida no critério de aceite do Entregável E2",
+                "homologação do entregável E2 fica condicionada à correção da cobertura de testes e do bug na API"
+            ],
+            "grau_completude_documental": "alto"
+        }
+    },
+    "comparacao": {
+        "percentual_aderencia": 38,
+        "entregaveis_comprovados": [
+            "Código Fonte da Funcionalidade \"X\"",
+            "API RESTful para integração com sistema externo",
+            "Relatório de Homologação Funcional"
+        ],
+        "entregaveis_nao_comprovados": [
+            "Documento de Arquitetura da Solução (DAS)",
+            "Manual do Usuário (versão web)"
+        ],
+        "riscos_identificados": [
+            "Cobertura de testes unitários do Entregável E2 (72%) está abaixo do mínimo contratual (80%).",
+            "Lacuna crítica na validação de dados obrigatórios na API E3 ('Número do Processo' aceitava valores nulos), indicando falha funcional e de segurança da informação.",
+            "Falhas identificadas (2) na pipeline de Integração Contínua (Jenkins) para o Entregável E2, impactando a qualidade e estabilidade do código.",
+            "Requisito funcional 'RF-07: Cálculo para anos bissextos' encontra-se pendente no checklist de requisitos do Relatório de Homologação Funcional (E4).",
+            "Ausência de comprovação de verificação de vulnerabilidades (SonarQube) para o Código Fonte do Entregável E2, conforme critério de aceite.",
+            "Documentação inicial da API E3 (Swagger) indica possível incompletude, podendo gerar dificuldades de integração futuras.",
+            "Inexistência de manifestação formal de aceite do Gestor para o Relatório de Homologação Funcional (E4)."
+        ],
+        "alertas_prazo": [
+            "O Entregável E1 (Documento de Arquitetura da Solução) não foi evidenciado, apesar de ser previsto para o Mês 1-3 do contrato.",
+            "A homologação do Entregável E2 está condicionada a correções de cobertura de testes e de bugs na API, indicando atraso na conclusão e aceite formal."
+        ],
+        "recomendacao_fiscal": "aprovar_com_determinações",
+        "justificativa_tecnica": "A análise da evidência em comparação com o contrato revela que os entregáveis 'Código Fonte da Funcionalidade \"X\"' (E2), 'API RESTful para integração com sistema externo' (E3) e 'Relatório de Homologação Funcional' (E4) foram mencionados e há indícios de sua execução. No entanto, os entregáveis 'Documento de Arquitetura da Solução (DAS)' (E1) e 'Manual do Usuário (versão web)' (E5) não foram comprovados, sendo E1 um item de entrega para os meses iniciais do contrato. \n\nPara os entregáveis evidenciados, há não conformidades significativas nos critérios de aceite. O E2 apresenta cobertura de testes unitários abaixo do mínimo contratual (72% vs. 80%) e não há comprovação da verificação de vulnerabilidades. O E3, embora tenha testes de integração com sucesso, apresenta uma falha crítica de validação de dados e a documentação ainda é 'inicial'. O E4 não atendeu 100% do checklist de requisitos funcionais (RF-07 pendente) e, crucialmente, carece de manifestação formal de aceite do Gestor. \n\nDiversos riscos técnicos foram identificados, incluindo falhas em testes de integração contínua, lacuna na validação de dados, requisito funcional pendente e baixa cobertura de testes. A homologação do Entregável E2 está condicionada a correções, o que configura um alerta de prazo para sua entrega final e aceite. Apesar do alto grau de completude documental para os artefatos apresentados, a ausência de documentos chave (como o aceite formal) e a não conformidade com critérios técnicos impedem uma aprovação integral. Recomenda-se aprovação com determinações para que as não conformidades sejam sanadas e os riscos mitigados antes da aceitação final."
+    },
+    "score_hibrido": 44,
+    "modo_execucao": "hibrido",
+    "ia_utilizada": true,
+    "trilha_auditoria": [
+        {
+            "timestamp": "2026-03-01T14:17:20.536173+00:00",
+            "evento": "Pipeline iniciado"
+        },
+        {
+            "timestamp": "2026-03-01T14:17:20.700080+00:00",
+            "evento": "Texto do contrato extraído"
+        },
+        {
+            "timestamp": "2026-03-01T14:17:38.039254+00:00",
+            "evento": "Contrato estruturado via IA"
+        },
+        {
+            "timestamp": "2026-03-01T14:17:38.087223+00:00",
+            "evento": "Texto da evidência extraído"
+        },
+        {
+            "timestamp": "2026-03-01T14:17:38.087269+00:00",
+            "evento": "Validação estrutural realizada (Score: 100%)"
+        },
+        {
+            "timestamp": "2026-03-01T14:17:38.087298+00:00",
+            "evento": "Score determinístico calculado: 50%"
+        },
+        {
+            "timestamp": "2026-03-01T14:17:48.953159+00:00",
+            "evento": "Evidência estruturada via IA"
+        },
+        {
+            "timestamp": "2026-03-01T14:18:16.355589+00:00",
+            "evento": "Comparação contrato x evidência realizada"
+        },
+        {
+            "timestamp": "2026-03-01T14:18:16.355616+00:00",
+            "evento": "Score híbrido calculado: 44%"
+        },
+        {
+            "timestamp": "2026-03-01T14:18:16.355622+00:00",
+            "evento": "Análise finalizada"
+        }
+    ]
+}
