@@ -1,0 +1,645 @@
+{
+    "analise_id": "7175e6c7-2788-40df-9ecd-ab2b53a422ee",
+    "timestamp": "2026-03-01T15:28:58.643349+00:00",
+    "contrato": {
+        "arquivo": "contrato_temp.pdf",
+        "analise_ia": {
+            "tipo_contrato": {
+                "valor": "UST",
+                "fonte_textual": "UNIDADE DE SERVIÇO TÉCNICO - UST",
+                "pagina": null
+            },
+            "objeto": {
+                "valor": "prestação de serviços técnicos especializados de Tecnologia da Informação, sob o regime de dedicação exclusiva de equipe, para o desenvolvimento, evolução e sustentação do Sistema Integrado de Planejamento e Gestão (SIPG), por demanda, mensurados por Unidade de Serviço Técnico (UST).",
+                "fonte_textual": "O presente contrato tem por objeto a prestação de serviços técnicos especializados de Tecnologia da Informação, sob o regime de dedicação exclusiva de equipe, para o desenvolvimento, evolução e sustentação do Sistema Integrado de Planejamento e Gestão (SIPG), por demanda, mensurados por Unidade de Serviço Técnico (UST).",
+                "pagina": null
+            },
+            "entregaveis": [
+                {
+                    "descricao": "Documento de Arquitetura da Solução (DAS)",
+                    "fonte_textual": "E1 Documento de Arquitetura da Solução (DAS)",
+                    "pagina": null,
+                    "criterios_aceite": [
+                        {
+                            "criterio": "Aprovação da CONTRATANTE",
+                            "fonte_textual": "Aprovação da CONTRATANTE",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Conformidade com o padrão do governo (e-Ping)",
+                            "fonte_textual": "Conformidade com o padrão do governo (e-Ping)",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Diagrama C4 (Nível 2) completo",
+                            "fonte_textual": "Diagrama C4 (Nível 2) completo",
+                            "pagina": null
+                        }
+                    ],
+                    "prazo_associado": {
+                        "valor": "Mês 1-3",
+                        "fonte_textual": "Mês 1-3: Entrega do Documento de Arquitetura da Solução (E1) e baseline da aplicação.",
+                        "pagina": null
+                    }
+                },
+                {
+                    "descricao": "Código Fonte da Funcionalidade \"X\"",
+                    "fonte_textual": "E2 Código Fonte da Funcionalidade \"X\"",
+                    "pagina": null,
+                    "criterios_aceite": [
+                        {
+                            "criterio": "Repositório Git com versionamento semântico",
+                            "fonte_textual": "Repositório Git com versionamento semântico",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Cobertura de testes unitários >= 80%",
+                            "fonte_textual": "Cobertura de testes unitários >= 80%",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Ausência de vulnerabilidades críticas no SonarQube",
+                            "fonte_textual": "Ausência de vulnerabilidades críticas no SonarQube",
+                            "pagina": null
+                        }
+                    ],
+                    "prazo_associado": {
+                        "valor": "Mês 4-6",
+                        "fonte_textual": "Mês 4-6: Entrega de 3 funcionalidades de complexidade alta (código fonte - E2 e API - E3).",
+                        "pagina": null
+                    }
+                },
+                {
+                    "descricao": "API RESTful para integração com sistema externo",
+                    "fonte_textual": "E3 API RESTful para integração com sistema externo",
+                    "pagina": null,
+                    "criterios_aceite": [
+                        {
+                            "criterio": "Documentação Swagger/OpenAPI completa",
+                            "fonte_textual": "Documentação Swagger/OpenAPI completa",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Contratos de interface validados",
+                            "fonte_textual": "Contratos de interface validados",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Testes de integração automatizados com sucesso",
+                            "fonte_textual": "Testes de integração automatizados com sucesso",
+                            "pagina": null
+                        }
+                    ],
+                    "prazo_associado": {
+                        "valor": "Mês 4-6",
+                        "fonte_textual": "Mês 4-6: Entrega de 3 funcionalidades de complexidade alta (código fonte - E2 e API - E3).",
+                        "pagina": null
+                    }
+                },
+                {
+                    "descricao": "Relatório de Homologação Funcional",
+                    "fonte_textual": "E4 Relatório de Homologação Funcional",
+                    "pagina": null,
+                    "criterios_aceite": [
+                        {
+                            "criterio": "Evidência de execução de testes (prints)",
+                            "fonte_textual": "Evidência de execução de testes (prints)",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Checklist de requisitos funcionais 100% atendidos",
+                            "fonte_textual": "Checklist de requisitos funcionais 100% atendidos",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Manifestação formal do Gestor",
+                            "fonte_textual": "Manifestação formal do Gestor",
+                            "pagina": null
+                        }
+                    ],
+                    "prazo_associado": {
+                        "valor": "Mês 7-9",
+                        "fonte_textual": "Mês 7-9: Ciclo de homologação e entrega de documentação (E4 e E5).",
+                        "pagina": null
+                    }
+                },
+                {
+                    "descricao": "Manual do Usuário (versão web)",
+                    "fonte_textual": "E5 Manual do Usuário (versão web)",
+                    "pagina": null,
+                    "criterios_aceite": [
+                        {
+                            "criterio": "Disponibilização em formato acessível (PDF/A)",
+                            "fonte_textual": "Disponibilização em formato acessível (PDF/A)",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Tutoriais em vídeo para funcionalidades-chave",
+                            "fonte_textual": "Tutoriais em vídeo para funcionalidades-chave",
+                            "pagina": null
+                        },
+                        {
+                            "criterio": "Aprovação da área de negócio",
+                            "fonte_textual": "Aprovação da área de negócio",
+                            "pagina": null
+                        }
+                    ],
+                    "prazo_associado": {
+                        "valor": "Mês 7-9",
+                        "fonte_textual": "Mês 7-9: Ciclo de homologação e entrega de documentação (E4 e E5).",
+                        "pagina": null
+                    }
+                }
+            ],
+            "prazos_gerais": [
+                {
+                    "valor": "12 (doze) meses",
+                    "fonte_textual": "O prazo de vigência do contrato é de 12 (doze) meses, contados a partir da data de sua assinatura, podendo ser prorrogado nos termos do art. 107 da Lei 14.133/2021.",
+                    "pagina": null
+                },
+                {
+                    "valor": "até o 30º (trigésimo) dia subsequente ao mês da prestação de serviços",
+                    "fonte_textual": "O pagamento será efetuado até o 30º (trigésimo) dia subsequente ao mês da prestação de serviços, após a devida atestação pela fiscalização do CONTRATANTE.",
+                    "pagina": null
+                }
+            ],
+            "valor_global": {
+                "valor": "R$ 1.500.000,00 (um milhão e quinhentos mil reais)",
+                "fonte_textual": "O valor global estimado do contrato é de R$ 1.500.000,00 (um milhão e quinhentos mil reais).",
+                "pagina": null
+            },
+            "obrigações_relevantes": [
+                {
+                    "descricao": "Executar os serviços conforme as especificações técnicas e o plano de trabalho.",
+                    "parte": "CONTRATADA",
+                    "fonte_textual": "a) Executar os serviços conforme as especificações técnicas e o plano de trabalho.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Alocar equipe técnica qualificada e em regime de dedicação exclusiva a este contrato.",
+                    "parte": "CONTRATADA",
+                    "fonte_textual": "b) Alocar equipe técnica qualificada e em regime de dedicação exclusiva a este contrato.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Utilizar ferramentas de controle de versão (Git) e integração contínua disponibilizadas pela CONTRATANTE.",
+                    "parte": "CONTRATADA",
+                    "fonte_textual": "c) Utilizar ferramentas de controle de versão (Git) e integração contínua disponibilizadas pela CONTRATANTE.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Comunicar imediatamente à fiscalização qualquer fato que possa interferir no andamento dos serviços.",
+                    "parte": "CONTRATADA",
+                    "fonte_textual": "d) Comunicar imediatamente à fiscalização qualquer fato que possa interferir no andamento dos serviços.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Manter, durante toda a execução contratual, todas as condições de habilitação e regularidade fiscal.",
+                    "parte": "CONTRATADA",
+                    "fonte_textual": "e) Manter, durante toda a execução contratual, todas as condições de habilitação e regularidade fiscal.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Medir mensalmente os serviços por meio de Relatório Técnico de Medição, contendo o detalhamento das atividades, a quantidade de USTs executadas (com base no registro de horas apontadas na ferramenta de gestão), e as evidências de execução dos entregáveis (E1 a E5).",
+                    "parte": "CONTRATADA",
+                    "fonte_textual": "A medição será feita mensalmente pela CONTRATADA, por meio de Relatório Técnico de Medição, contendo o detalhamento das atividades, a quantidade de USTs executadas (com base no registro de horas apontadas na ferramenta de gestão), e as evidências de execução dos entregáveis (E1 a E5).",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Corrigir defeitos críticos no prazo de 24h após abertura (Meta: 100%).",
+                    "parte": "CONTRATADA",
+                    "fonte_textual": "IQ3 - Índice de Correções: Percentual de defeitos críticos corrigidos no prazo de 24h após abertura. Meta: 100%.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Proporcionar à CONTRATADA as condições necessárias à execução do objeto, incluindo acesso a sistemas, documentação e infraestrutura.",
+                    "parte": "CONTRATANTE",
+                    "fonte_textual": "a) Proporcionar à CONTRATADA as condições necessárias à execução do objeto, incluindo acesso a sistemas, documentação e infraestrutura.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Efetuar o pagamento nas condições e preços pactuados.",
+                    "parte": "CONTRATANTE",
+                    "fonte_textual": "b) Efetuar o pagamento nas condições e preços pactuados.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Convocar a CONTRATADA para reuniões de alinhamento e planejamento.",
+                    "parte": "CONTRATANTE",
+                    "fonte_textual": "c) Convocar a CONTRATADA para reuniões de alinhamento e planejamento.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Designar formalmente os gestores e fiscais do contrato.",
+                    "parte": "CONTRATANTE",
+                    "fonte_textual": "d) Designar formalmente os gestores e fiscais do contrato.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Todos os artefatos de software desenvolvidos deverão estar em conformidade com: a) Lei Geral de Proteção de Dados (Lei nº 13.709/2018). b) Modelo de Requisitos para Sistemas Informatizados de Gestão Arquivística de Documentos (e-ARQ Brasil). c) Padrões de acessibilidade eGov (e-MAG).",
+                    "parte": "CONTRATADA",
+                    "fonte_textual": "Todos os artefatos de software desenvolvidos deverão estar em conformidade com: a) Lei Geral de Proteção de Dados (Lei nº 13.709/2018). b) Modelo de Requisitos para Sistemas Informatizados de Gestão Arquivística de Documentos (e-ARQ Brasil). c) Padrões de acessibilidade eGov (e-MAG).",
+                    "pagina": null
+                }
+            ],
+            "riscos_contratuais_identificados": [
+                {
+                    "descricao": "Inexecução total ou parcial do objeto, com aplicação de sanções previstas no art. 156 da Lei 14.133/2021.",
+                    "fonte_textual": "Pela inexecução total ou parcial do objeto, a CONTRATANTE poderá aplicar à CONTRATADA as sanções previstas no art. 156 da Lei 14.133/2021, garantida a prévia defesa.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Atraso injustificado na execução do objeto, sujeitando a CONTRATADA à multa de mora de 0,5% por dia de atraso, incidente sobre o valor da parcela inadimplida, até o limite de 30 dias.",
+                    "fonte_textual": "O atraso injustificado na execução do objeto sujeitará a CONTRATADA à multa de mora de 0,5% (cinco décimos por cento) por dia de atraso, incidente sobre o valor da parcela inadimplida, até o limite de 30 (trinta) dias.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Não cumprimento dos indicadores de qualidade (IQ1 a IQ4), podendo acarretar glosa no pagamento da respectiva medição, proporcional ao descumprimento.",
+                    "fonte_textual": "O não cumprimento dos indicadores de qualidade (IQ1 a IQ4) poderá acarretar glosa no pagamento da respectiva medição, proporcional ao descumprimento.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Responsabilidade da CONTRATADA por danos causados à CONTRATANTE ou a terceiros, ou por irregularidades na execução do objeto contratual, não excluída ou reduzida pela fiscalização.",
+                    "fonte_textual": "A fiscalização de que trata esta cláusula não exclui nem reduz a responsabilidade da CONTRATADA pelos danos causados à CONTRATANTE ou a terceiros, ou por irregularidades na execução do objeto contratual.",
+                    "pagina": null
+                }
+            ]
+        }
+    },
+    "evidencia": {
+        "indicador_confiabilidade": {
+            "score_confiabilidade": 100,
+            "nivel_confiabilidade": "alta",
+            "criterios_avaliados": {
+                "tamanho": true,
+                "datas_formais": true,
+                "responsavel": true,
+                "referencia_contrato": true,
+                "linguagem_tecnica": true
+            }
+        },
+        "arquivo": "evidencia_temp.pdf",
+        "regras_aplicadas": [
+            "verificacao_testes",
+            "verificacao_versionamento"
+        ],
+        "conformidades": [
+            "Evidência de versionamento"
+        ],
+        "nao_conformidades": [
+            "Ausência de testes automatizados"
+        ],
+        "score_deterministico": 50,
+        "nivel_risco": "moderado",
+        "analise_ia": {
+            "atividades_executadas": [
+                {
+                    "descricao": "Dedicou-se à conclusão do Entregável E2 e à evolução do Entregável E3",
+                    "fonte_textual": "No período em questão, a equipe dedicou-se à conclusão do Entregável E2 (Código Fonte da Funcionalidade \"X\") referente à demanda \"Cálculo Automático de Metas\" no módulo \"Plano+\", e à evolução do Entregável E3 (API RESTful) para integração com o sistema SIAFI.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Análise de requisitos complementares",
+                    "fonte_textual": "Análise de requisitos complementares.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Desenvolvimento de microsserviço de cálculo",
+                    "fonte_textual": "Desenvolvimento de microsserviço de cálculo.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Criação de testes unitários e de integração",
+                    "fonte_textual": "Criação de testes unitários e de integração.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Correção de bugs identificados nos testes homologatórios da quinzena anterior",
+                    "fonte_textual": "Correção de bugs identificados nos testes homologatórios da quinzena anterior.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Elaboração da documentação inicial da API",
+                    "fonte_textual": "Elaboração da documentação inicial da API.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Realização de commits no repositório oficial do CONTRATANTE",
+                    "fonte_textual": "Os commits foram realizados no repositório oficial do CONTRATANTE (git@git.gov:planejamento/sipg/plano-modulo.git).",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Implementação de serviço de cálculo de metas com base na média móvel",
+                    "fonte_textual": "feat: Implementa serviço de cálculo de metas com base na média móvel",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Adição de testes de unidade para o CalculoMetaService",
+                    "fonte_textual": "test: Adiciona testes de unidade para o CalculoMetaService (72% de cobertura)",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Execução da pipeline de Integração Contínua (Jenkins)",
+                    "fonte_textual": "A pipeline de Integração Contínua (Jenkins) foi executada.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Validação manual pelo fiscal",
+                    "fonte_textual": "validação manual pelo fiscal",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Elaboração do relatório consolidando os testes da funcionalidade \"Cálculo de Metas\"",
+                    "fonte_textual": "Elaboração do relatório consolidando os testes da funcionalidade \"Cálculo de Metas\".",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Elaboração e submissão do relatório de homologação funcional à apreciação do fiscal",
+                    "fonte_textual": "O relatório (RH_2024_010.pdf) foi elaborado e submetido à apreciação do fiscal.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Atestar a execução das 330 USTs no período",
+                    "fonte_textual": "A CONTRATADA atesta a execução das 330 USTs no período",
+                    "pagina": null
+                }
+            ],
+            "entregaveis_identificados": [
+                {
+                    "descricao": "Entregável E2 (Código Fonte da Funcionalidade \"X\") referente à demanda \"Cálculo Automático de Metas\" no módulo \"Plano+\"",
+                    "fonte_textual": "Entregável E2 (Código Fonte da Funcionalidade \"X\") referente à demanda \"Cálculo Automático de Metas\" no módulo \"Plano+\"",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Entregável E3 (API RESTful) para integração com o sistema SIAFI",
+                    "fonte_textual": "Entregável E3 (API RESTful) para integração com o sistema SIAFI",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Entregável E2: Código Fonte (Funcionalidade \"Cálculo Automático de Metas\")",
+                    "fonte_textual": "4.1. Entregável E2: Código Fonte (Funcionalidade \"Cálculo Automático de Metas\")",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Lógica de negócio para o cálculo automático de metas baseado em séries históricas",
+                    "fonte_textual": "Desenvolvimento da lógica de negócio para o cálculo automático de metas baseado em séries históricas.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Entregável E3: API RESTful (Integração SIAFI)",
+                    "fonte_textual": "4.2. Entregável E3: API RESTful (Integração SIAFI)",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Endpoints para envio de dados de empenho simulados",
+                    "fonte_textual": "Desenvolvimento dos endpoints para envio de dados de empenho simulados.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Documentação (Swagger)",
+                    "fonte_textual": "Documentação (Swagger): Disponibilizada no endereço interno http://api-dev.sipg.gov/swagger.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Entregável E4: Relatório de Homologação Funcional",
+                    "fonte_textual": "4.3. Entregável E4: Relatório de Homologação Funcional",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Relatório consolidando os testes da funcionalidade \"Cálculo de Metas\"",
+                    "fonte_textual": "Elaboração do relatório consolidando os testes da funcionalidade \"Cálculo de Metas\".",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Relatório (RH_2024_010.pdf)",
+                    "fonte_textual": "O relatório (RH_2024_010.pdf) foi elaborado e submetido à apreciação do fiscal.",
+                    "pagina": null
+                }
+            ],
+            "datas_mencionadas": [
+                {
+                    "descricao": "Mês de Referência: Maio de 2024",
+                    "fonte_textual": "Mês de Referência: Maio de 2024 (01/05/2024 a 31/05/2024)",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Data de Elaboração: 03/06/2024",
+                    "fonte_textual": "Data de Elaboração: 03/06/2024",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Data do Evidência de Commit 1: 15/05/2024",
+                    "fonte_textual": "Data: 15/05/2024.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Data do Evidência de Commit 2: 20/05/2024",
+                    "fonte_textual": "Data: 20/05/2024.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Data da Ciência da Fiscalização: 05/06/2024",
+                    "fonte_textual": "CIÊNCIA DA FISCALIZAÇÃO (em 05/06/2024)",
+                    "pagina": null
+                }
+            ],
+            "indicadores_qualidade": [
+                {
+                    "descricao": "Cobertura de testes de unidade: 72%",
+                    "fonte_textual": "72% de cobertura",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Testes Automatizados (Jenkins): 142 executados, 140 com sucesso, 2 falhas",
+                    "fonte_textual": "O relatório de testes mostra 142 testes executados, 140 com sucesso, 2 falhas.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Testes de integração automatizados da API RESTful: sucesso",
+                    "fonte_textual": "Os testes de integração automatizados apresentaram sucesso.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Checklist dos requisitos (Relatório de Homologação): 9 de 10 itens marcados como \"OK\", 1 item \"PENDENTE\"",
+                    "fonte_textual": "Checklist dos requisitos (9 de 10 itens marcados como \"OK\", o item \"RF-07: Cálculo para anos bissextos\" está marcado como \"PENDENTE\").",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Cobertura de testes do código entregue: 72%, abaixo da meta de 80% estabelecida no critério de aceite do Entregável E2",
+                    "fonte_textual": "a cobertura de testes do código entregue ficou em 72%, abaixo da meta de 80% estabelecida no critério de aceite do Entregável E2 (item 3.1 do contrato).",
+                    "pagina": null
+                }
+            ],
+            "menção_aceite_formal": {
+                "valor": false,
+                "fonte_textual": "O fiscal técnico, Sr. Carlos Eduardo, solicitou ajustes no item RF-07 antes da aprovação final. (...) a homologação do entregável E2 fica condicionada à correção da cobertura de testes e do bug na API.",
+                "pagina": null
+            },
+            "observacoes_relevantes": [
+                {
+                    "descricao": "Responsável pela Medição: Maria Aparecida Souza (Coordenadora Técnica - CONTRATADA)",
+                    "fonte_textual": "Responsável pela Medição: Maria Aparecida Souza (Coordenadora Técnica - CONTRATADA)",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Quantidade de USTs: 330",
+                    "fonte_textual": "Quantidade de USTs: 330",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Valor Unitário da UST: R$ 180,00",
+                    "fonte_textual": "Valor Unitário da UST: R$ 180,00",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Valor Total da Medição: R$ 59.400,00",
+                    "fonte_textual": "Valor Total da Medição: R$ 59.400,00 (cinquenta e nove mil e quatrocentos reais).",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Print Simulado do Jenkins mostrando \"Unstable: 2 tests failed\"",
+                    "fonte_textual": "Print Simulado: [Imagem de uma tela do Jenkins mostrando uma barra vermelha indicando \"Unstable: 2 tests failed\", com o número total de testes ao lado].",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Identificação de lacuna na validação de dados obrigatórios na API (campo \"Número do Processo\" aceitava valores nulos) durante validação manual pelo fiscal",
+                    "fonte_textual": "Contudo, durante a validação manual pelo fiscal, foi identificada uma lacuna na validação de dados obrigatórios (campo \"Número do Processo\" aceitava valores nulos).",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Print Simulado da interface do Swagger (UI) mostrando lista de endpoints",
+                    "fonte_textual": "Print Simulado: [Imagem da interface do Swagger (UI) mostrando a lista de endpoints, como POST /api/empenho e GET /api/empenho/{id}, com as respostas descritas].",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Item \"RF-07: Cálculo para anos bissextos\" está marcado como \"PENDENTE\" no checklist de requisitos",
+                    "fonte_textual": "o item \"RF-07: Cálculo para anos bissextos\" está marcado como \"PENDENTE\".",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Fiscal técnico, Sr. Carlos Eduardo, solicitou ajustes no item RF-07 antes da aprovação final",
+                    "fonte_textual": "O fiscal técnico, Sr. Carlos Eduardo, solicitou ajustes no item RF-07 antes da aprovação final.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Cobertura de testes do código entregue (72%) abaixo da meta de 80% estabelecida no critério de aceite do Entregável E2",
+                    "fonte_textual": "a cobertura de testes do código entregue ficou em 72%, abaixo da meta de 80% estabelecida no critério de aceite do Entregável E2 (item 3.1 do contrato).",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Falha na validação da API demonstra lacuna na especificação e nos testes contratados",
+                    "fonte_textual": "a falha na validação da API (item 4.2) demonstra uma lacuna na especificação e nos testes contratados.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "CONTRATADA reconhece não conformidade parcial do Entregável E2 e solicita aprovação com ressalvas, comprometendo-se a elevar a cobertura no próximo ciclo",
+                    "fonte_textual": "A CONTRATADA atesta a execução das 330 USTs no período, mas reconhece a não conformidade parcial do Entregável E2 em relação ao critério de cobertura de testes, solicitando a aprovação com ressalvas e o compromisso de elevar a cobertura no próximo ciclo de entregas.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Detalhamento das horas (JIRA) e artefatos produzidos seguem em anexo",
+                    "fonte_textual": "Segue em anexo o detalhamento das horas (JIRA) e os artefatos produzidos.",
+                    "pagina": null
+                },
+                {
+                    "descricao": "Fiscal concorda com a medição das horas, mas homologação do E2 condicionada à correção da cobertura de testes e do bug na API",
+                    "fonte_textual": "Concordo com a medição das horas, porém a homologação do entregável E2 fica condicionada à correção da cobertura de testes e do bug na API.",
+                    "pagina": null
+                }
+            ]
+        }
+    },
+    "comparacao": {
+        "percentual_aderencia": 23,
+        "entregaveis_comprovados": [],
+        "entregaveis_nao_comprovados": [
+            {
+                "descricao": "Documento de Arquitetura da Solução (DAS)",
+                "fundamentacao": "Não evidenciado na medição e com prazo de entrega (Mês 1-3) expirado (Mês de referência: Maio/2024)."
+            },
+            {
+                "descricao": "Código Fonte da Funcionalidade \"X\"",
+                "fundamentacao": "Não atendeu ao critério de cobertura de testes unitários (72% vs 80% exigido) e não há evidência para os critérios de versionamento semântico e ausência de vulnerabilidades críticas (SonarQube). O fiscal técnico condicionou a homologação à correção."
+            },
+            {
+                "descricao": "API RESTful para integração com sistema externo",
+                "fundamentacao": "Não atendeu ao critério de 'Contratos de interface validados' devido à falha na validação manual de dados obrigatórios (campo 'Número do Processo' aceitava valores nulos). A documentação Swagger, embora presente, foi classificada como 'inicial', levantando dúvidas sobre sua completude. O fiscal técnico condicionou a homologação à correção."
+            },
+            {
+                "descricao": "Relatório de Homologação Funcional",
+                "fundamentacao": "Não atendeu ao critério de 'Checklist de requisitos funcionais 100% atendidos' (o item 'RF-07: Cálculo para anos bissextos' está marcado como 'PENDENTE') e não houve 'Manifestação formal do Gestor' de aprovação, mas sim solicitação de ajustes."
+            }
+        ],
+        "riscos_identificados": [
+            {
+                "descricao": "Risco de Inexecução Parcial do Objeto",
+                "fundamentacao": "Evidenciado descumprimento de critérios de aceite para os entregáveis E2 (cobertura de testes abaixo do contratado), E3 (falha na validação de dados da API) e E4 (checklist de requisitos com pendência), podendo configurar inexecução parcial conforme o art. 156 da Lei 14.133/2021."
+            },
+            {
+                "descricao": "Risco de Não Cumprimento de Indicadores de Qualidade e Glosa",
+                "fundamentacao": "O não atendimento aos critérios de aceite dos entregáveis, especialmente a cobertura de testes de E2 (72% vs 80%) e as lacunas de validação de E3, aponta para o não cumprimento de indicadores de qualidade, o que pode acarretar glosa no pagamento da medição, conforme cláusula contratual específica."
+            },
+            {
+                "descricao": "Risco de Atraso e Retrabalho",
+                "fundamentacao": "A não homologação de E2 e E3, a pendência em E4, e o atraso no E1 (não evidenciado), somados às solicitações de ajustes do fiscal, indicam a necessidade de retrabalho e o potencial de impactos negativos no cronograma e nos prazos futuros de entrega."
+            },
+            {
+                "descricao": "Risco de Lacuna na Conformidade Contratual e Governança",
+                "fundamentacao": "A ausência de evidência para critérios como 'versionamento semântico' e 'ausência de vulnerabilidades críticas no SonarQube' para o entregável E2, conforme exigido em contrato, representa uma lacuna importante na comprovação da conformidade técnica e na governança dos artefatos de software."
+            }
+        ],
+        "alertas_prazo": [
+            {
+                "descricao": "Entregável E1 (Documento de Arquitetura da Solução - DAS) não entregue",
+                "fundamentacao": "O prazo de entrega contratual para o E1 era 'Mês 1-3'. A medição atual refere-se ao 'Mês de Referência: Maio de 2024' (Mês 5), e o entregável não foi evidenciado, indicando atraso na sua entrega."
+            }
+        ],
+        "recomendacao_fiscal": "aprovar_com_determinações",
+        "justificativa_tecnica": "A CONTRATADA demonstrou execução de USTs e entregáveis E2, E3 e E4 no período de Maio de 2024. Contudo, os entregáveis E2 (Código Fonte), E3 (API RESTful) e E4 (Relatório de Homologação) não atenderam integralmente seus critérios de aceite contratuais, conforme evidenciado pela cobertura de testes abaixo do esperado (72% vs 80% para E2), falha na validação de dados da API (E3) e checklist de requisitos não 100% atendido (E4). O entregável E1 (Documento de Arquitetura) não foi evidenciado e está com prazo expirado (Mês 3). O fiscal técnico condicionou a homologação dos entregáveis E2 e E3 a ajustes. A medição das USTs pode ser considerada para pagamento, porém a aprovação formal dos entregáveis e a continuidade contratual requerem determinações claras para correção das não conformidades identificadas, mitigar riscos e garantir a conformidade futura."
+    },
+    "score_hibrido": 36,
+    "modo_execucao": "hibrido",
+    "ia_utilizada": true,
+    "trilha_auditoria": [
+        {
+            "timestamp": "2026-03-01T15:28:58.643898+00:00",
+            "evento": "Pipeline iniciado"
+        },
+        {
+            "timestamp": "2026-03-01T15:28:58.821166+00:00",
+            "evento": "Texto do contrato extraído"
+        },
+        {
+            "timestamp": "2026-03-01T15:29:20.176978+00:00",
+            "evento": "Contrato estruturado via IA"
+        },
+        {
+            "timestamp": "2026-03-01T15:29:20.258661+00:00",
+            "evento": "Texto da evidência extraído"
+        },
+        {
+            "timestamp": "2026-03-01T15:29:20.258705+00:00",
+            "evento": "Validação estrutural realizada (Score: 100%)"
+        },
+        {
+            "timestamp": "2026-03-01T15:29:20.258738+00:00",
+            "evento": "Score determinístico calculado: 50%"
+        },
+        {
+            "timestamp": "2026-03-01T15:29:47.563710+00:00",
+            "evento": "Evidência estruturada via IA"
+        },
+        {
+            "timestamp": "2026-03-01T15:30:30.096006+00:00",
+            "evento": "Comparação contrato x evidência realizada"
+        },
+        {
+            "timestamp": "2026-03-01T15:30:30.096022+00:00",
+            "evento": "Score híbrido calculado: 36%"
+        },
+        {
+            "timestamp": "2026-03-01T15:30:30.096025+00:00",
+            "evento": "Análise finalizada"
+        }
+    ]
+}

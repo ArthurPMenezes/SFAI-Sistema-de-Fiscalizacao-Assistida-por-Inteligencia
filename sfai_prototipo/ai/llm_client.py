@@ -68,10 +68,15 @@ def _gerar_resposta(prompt: str, esperar_json=True):
     client = genai.Client(api_key=api_key)
 
     prompt_final = f"""
-    {CONTEXTO_SFAI}
+{CONTEXTO_SFAI}
 
-    {prompt}
-    """
+RESPONDA APENAS COM JSON VÁLIDO.
+NÃO utilize markdown.
+NÃO utilize ```json.
+NÃO adicione comentários.
+
+{prompt}
+"""
 
     response = client.models.generate_content(
         model="gemini-2.5-flash",
@@ -83,8 +88,17 @@ def _gerar_resposta(prompt: str, esperar_json=True):
     if not esperar_json:
         return texto
 
-    return _extrair_json_seguro(texto)
+    resultado = _extrair_json_seguro(texto)
 
+    # 🔒 Fallback de segurança
+    if isinstance(resultado, dict) and resultado.get("erro_parse"):
+        return {
+            "erro_parse": True,
+            "mensagem": "IA retornou JSON inválido",
+            "resposta_bruta": texto
+        }
+
+    return resultado
 
 # ==============================
 # 🔹 FUNÇÕES PRINCIPAIS

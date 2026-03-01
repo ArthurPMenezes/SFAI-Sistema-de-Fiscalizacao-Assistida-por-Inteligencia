@@ -33,29 +33,58 @@ Retorne apenas JSON válido quando solicitado.
 PROMPT_ESTRUTURAR_CONTRATO = """
 Você é um especialista em análise estruturada de contratos públicos de TI.
 
-Extraia e estruture as informações contratuais no formato JSON abaixo.
-Não invente dados.
-Se algo não estiver claro, retorne null.
+REGRAS OBRIGATÓRIAS:
+- NÃO explique nada.
+- NÃO acrescente conteúdo externo.
+- NÃO utilize conhecimento geral.
+- Extraia apenas o que está explicitamente no texto.
+- Para cada informação relevante, informe também o trecho literal e a referência de localização.
+- Responda exclusivamente com JSON válido.
+- Finalize corretamente com }.
 
 Formato obrigatório:
 
 {
-  "tipo_contrato": "UST|horas|produto|outro",
-  "objeto": "string",
+  "tipo_contrato": {
+    "valor": "UST|horas|produto|outro|null",
+    "fonte_textual": "trecho literal",
+    "pagina": "número ou null"
+  },
+  "objeto": {
+    "valor": "string ou null",
+    "fonte_textual": "trecho literal",
+    "pagina": "número ou null"
+  },
   "entregaveis": [
-      {
-        "descricao": "string",
-        "criterios_aceite": ["lista"],
-        "prazo_associado": "string ou null"
+    {
+      "descricao": "string",
+      "fonte_textual": "trecho literal",
+      "pagina": "número ou null",
+      "criterios_aceite": [
+        {
+          "criterio": "string",
+          "fonte_textual": "trecho literal",
+          "pagina": "número ou null"
+        }
+      ],
+      "prazo_associado": {
+        "valor": "string ou null",
+        "fonte_textual": "trecho literal",
+        "pagina": "número ou null"
       }
+    }
   ],
-  "prazos_gerais": ["lista"],
-  "valor_global": "string ou null",
-  "obrigações_relevantes": ["lista"],
-  "riscos_contratuais_identificados": ["lista"]
+  "prazos_gerais": [],
+  "valor_global": {
+    "valor": "string ou null",
+    "fonte_textual": "trecho literal",
+    "pagina": "número ou null"
+  },
+  "obrigações_relevantes": [],
+  "riscos_contratuais_identificados": []
 }
 
-Retorne SOMENTE JSON válido.
+Retorne apenas JSON válido.
 """
 
 #============================================================================================
@@ -68,25 +97,37 @@ Você é um auditor técnico especializado em fiscalização de contratos públi
 REGRAS OBRIGATÓRIAS:
 - NÃO explique nada.
 - NÃO acrescente conteúdo externo.
-- NÃO faça comentários.
-- NÃO adicione exemplos.
 - NÃO utilize conhecimento geral.
-- NÃO escreva textos técnicos fora do documento.
-- NÃO quebre o formato.
+- Extraia apenas informações presentes no texto.
+- Para cada informação extraída, informe o trecho literal e a referência de localização.
 - Responda exclusivamente com JSON válido.
-- Finalize o JSON corretamente com }.
-
-Você deve extrair SOMENTE informações presentes no texto fornecido.
+- Finalize corretamente com }.
 
 Formato obrigatório:
 
 {
-  "atividades_executadas": ["lista"],
-  "entregaveis_identificados": ["lista"],
-  "datas_mencionadas": ["lista"],
-  "indicadores_qualidade": ["lista"],
-  "menção_aceite_formal": true ou false,
-  "observacoes_relevantes": ["lista"]
+  "atividades_executadas": [
+    {
+      "descricao": "string",
+      "fonte_textual": "trecho literal",
+      "pagina": "número ou null"
+    }
+  ],
+  "entregaveis_identificados": [
+    {
+      "descricao": "string",
+      "fonte_textual": "trecho literal",
+      "pagina": "número ou null"
+    }
+  ],
+  "datas_mencionadas": [],
+  "indicadores_qualidade": [],
+  "menção_aceite_formal": {
+    "valor": true ou false,
+    "fonte_textual": "trecho literal ou null",
+    "pagina": "número ou null"
+  },
+  "observacoes_relevantes": []
 }
 
 Se alguma informação não existir, retorne lista vazia.
@@ -102,29 +143,28 @@ Você é um auditor técnico responsável por emitir parecer preliminar automati
 
 Compare o CONTRATO estruturado com a EVIDÊNCIA estruturada.
 
-Analise obrigatoriamente:
+Baseie-se exclusivamente nas informações estruturadas recebidas.
 
-1. Aderência de entregáveis
-2. Cumprimento de prazos
-3. Atendimento a critérios de aceite
-4. Existência de riscos técnicos
-5. Grau de comprovação documental
-
-Retorne no seguinte formato JSON:
+Formato obrigatório:
 
 {
   "percentual_aderencia": 0-100,
-  "entregaveis_comprovados": ["lista"],
-  "entregaveis_nao_comprovados": ["lista"],
-  "riscos_identificados": ["lista"],
-  "alertas_prazo": ["lista"],
-  "recomendacao_fiscal": 
+  "entregaveis_comprovados": [
+    {
+      "descricao": "string",
+      "fundamentacao": "string"
+    }
+  ],
+  "entregaveis_nao_comprovados": [],
+  "riscos_identificados": [],
+  "alertas_prazo": [],
+  "recomendacao_fiscal":
     "aprovar|
     aprovar_com_ressalvas|
     aprovar_com_determinações|
     abstenção_de_parecer|
     rejeitar",
-  "justificativa_tecnica": "string"
+  "justificativa_tecnica": "string objetiva"
 }
 
 Retorne apenas JSON válido.
